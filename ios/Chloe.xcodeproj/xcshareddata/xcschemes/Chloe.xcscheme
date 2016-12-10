@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Rapsodie.app"
-               BlueprintName = "Rapsodie"
-               ReferencedContainer = "container:Rapsodie.xcodeproj">
+               BuildableName = "Chloe.app"
+               BlueprintName = "Chloe"
+               ReferencedContainer = "container:Chloe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "RapsodieTests.xctest"
-               BlueprintName = "RapsodieTests"
-               ReferencedContainer = "container:Rapsodie.xcodeproj">
+               BuildableName = "ChloeTests.xctest"
+               BlueprintName = "ChloeTests"
+               ReferencedContainer = "container:Chloe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "RapsodieTests.xctest"
-               BlueprintName = "RapsodieTests"
-               ReferencedContainer = "container:Rapsodie.xcodeproj">
+               BuildableName = "ChloeTests.xctest"
+               BlueprintName = "ChloeTests"
+               ReferencedContainer = "container:Chloe.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Rapsodie.app"
-            BlueprintName = "Rapsodie"
-            ReferencedContainer = "container:Rapsodie.xcodeproj">
+            BuildableName = "Chloe.app"
+            BlueprintName = "Chloe"
+            ReferencedContainer = "container:Chloe.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Rapsodie.app"
-            BlueprintName = "Rapsodie"
-            ReferencedContainer = "container:Rapsodie.xcodeproj">
+            BuildableName = "Chloe.app"
+            BlueprintName = "Chloe"
+            ReferencedContainer = "container:Chloe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Rapsodie.app"
-            BlueprintName = "Rapsodie"
-            ReferencedContainer = "container:Rapsodie.xcodeproj">
+            BuildableName = "Chloe.app"
+            BlueprintName = "Chloe"
+            ReferencedContainer = "container:Chloe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

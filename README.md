@@ -1,6 +1,6 @@
-# Rapsodie 🛋
+# Chloé 🛋
 
-Take your kids to dreamland with Rapsodie, the connected lamp 💡
+Take your kids to dreamland with Chloé, the connected lamp 💡
 
 ## Requirements
 - [Node](https://nodejs.org) `5.1.x` or newer

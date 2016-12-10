@@ -12,8 +12,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* RapsodieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RapsodieTests.m */; };
-		0506F60AC11C41AA9BDE931F /* OpenSans-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF6DA207166B48B4B2D681FC /* OpenSans-Light-Italic.ttf */; };
+		00E356F31AD99517003FC87E /* ChloeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ChloeTests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -23,26 +22,26 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		1593E59FB9254C9E841BE9A9 /* Bariol-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17D752A5296B47BE8A3F9CA1 /* Bariol-Bold.ttf */; };
-		166A0AA453914ADB9CB7C012 /* OpenSans-Regular_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 155CE0A762AE4EF8B1420D0C /* OpenSans-Regular_Italic.ttf */; };
-		203EF124BDAD4261B4075DA3 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E490C06AAC674ED6A6C5B74F /* OpenSans-Regular.ttf */; };
-		3A0A53DA68C542C395C6A443 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2078F97234C0421C988F4FCA /* libRNSVG.a */; };
-		58B467A9263E4A73A4750F5F /* OpenSans-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7ACD91BD40BC4012A427244F /* OpenSans-Bold-Italic.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		A0E0B06282274A4282449B9A /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2307CC38C11478691990FA2 /* OpenSans-Light.ttf */; };
-		CFA0544046AE42CA8E6A11D1 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76D86506602344DFB25FD529 /* OpenSans-Semibold.ttf */; };
-		DA4D4DE9D8F941FA822F1076 /* Bariol-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A33E531E55409C88DA44B6 /* Bariol-Regular.ttf */; };
-		F302A780EA984C0C94CC4D28 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2F9D22DB6444A8C8F525830 /* OpenSans-Bold.ttf */; };
-		F4B694E41DF9EE4400B3E870 /* Bariol-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694DB1DF9EE4400B3E870 /* Bariol-Bold.ttf */; };
-		F4B694E51DF9EE4400B3E870 /* Bariol-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694DC1DF9EE4400B3E870 /* Bariol-Regular.ttf */; };
-		F4B694E61DF9EE4400B3E870 /* OpenSans-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694DD1DF9EE4400B3E870 /* OpenSans-Bold-Italic.ttf */; };
-		F4B694E71DF9EE4400B3E870 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694DE1DF9EE4400B3E870 /* OpenSans-Bold.ttf */; };
-		F4B694E81DF9EE4400B3E870 /* OpenSans-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694DF1DF9EE4400B3E870 /* OpenSans-Light-Italic.ttf */; };
-		F4B694E91DF9EE4400B3E870 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694E01DF9EE4400B3E870 /* OpenSans-Light.ttf */; };
-		F4B694EA1DF9EE4400B3E870 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694E11DF9EE4400B3E870 /* OpenSans-Regular.ttf */; };
-		F4B694EB1DF9EE4400B3E870 /* OpenSans-Regular_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694E21DF9EE4400B3E870 /* OpenSans-Regular_Italic.ttf */; };
-		F4B694EC1DF9EE4400B3E870 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B694E31DF9EE4400B3E870 /* OpenSans-Semibold.ttf */; };
+		F4395EC21DFC37E5002E4C48 /* Bariol-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EB91DFC37E5002E4C48 /* Bariol-Bold.ttf */; };
+		F4395EC31DFC37E5002E4C48 /* Bariol-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EB91DFC37E5002E4C48 /* Bariol-Bold.ttf */; };
+		F4395EC41DFC37E5002E4C48 /* Bariol-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBA1DFC37E5002E4C48 /* Bariol-Regular.ttf */; };
+		F4395EC51DFC37E5002E4C48 /* Bariol-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBA1DFC37E5002E4C48 /* Bariol-Regular.ttf */; };
+		F4395EC61DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBB1DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf */; };
+		F4395EC71DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBB1DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf */; };
+		F4395EC81DFC37E5002E4C48 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBC1DFC37E5002E4C48 /* OpenSans-Bold.ttf */; };
+		F4395EC91DFC37E5002E4C48 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBC1DFC37E5002E4C48 /* OpenSans-Bold.ttf */; };
+		F4395ECA1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBD1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf */; };
+		F4395ECB1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBD1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf */; };
+		F4395ECC1DFC37E5002E4C48 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBE1DFC37E5002E4C48 /* OpenSans-Light.ttf */; };
+		F4395ECD1DFC37E5002E4C48 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBE1DFC37E5002E4C48 /* OpenSans-Light.ttf */; };
+		F4395ECE1DFC37E5002E4C48 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBF1DFC37E5002E4C48 /* OpenSans-Regular.ttf */; };
+		F4395ECF1DFC37E5002E4C48 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBF1DFC37E5002E4C48 /* OpenSans-Regular.ttf */; };
+		F4395ED01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EC01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf */; };
+		F4395ED11DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EC01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf */; };
+		F4395ED21DFC37E5002E4C48 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EC11DFC37E5002E4C48 /* OpenSans-Semibold.ttf */; };
+		F4395ED31DFC37E5002E4C48 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EC11DFC37E5002E4C48 /* OpenSans-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +85,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Rapsodie;
+			remoteInfo = Chloe;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -137,61 +136,54 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		F4677E3F1DF9EA8400FA332D /* PBXContainerItemProxy */ = {
+		F4395E9D1DFC3737002E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
 			remoteInfo = "RCTImage-tvOS";
 		};
-		F4677E431DF9EA8400FA332D /* PBXContainerItemProxy */ = {
+		F4395EA11DFC3737002E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
 			remoteInfo = "RCTLinking-tvOS";
 		};
-		F4677E471DF9EA8400FA332D /* PBXContainerItemProxy */ = {
+		F4395EA51DFC3737002E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
 			remoteInfo = "RCTNetwork-tvOS";
 		};
-		F4677E4B1DF9EA8400FA332D /* PBXContainerItemProxy */ = {
+		F4395EA91DFC3737002E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28611D9B046600D4039D;
 			remoteInfo = "RCTSettings-tvOS";
 		};
-		F4677E4F1DF9EA8400FA332D /* PBXContainerItemProxy */ = {
+		F4395EAD1DFC3737002E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
 			remoteInfo = "RCTText-tvOS";
 		};
-		F4677E541DF9EA8400FA332D /* PBXContainerItemProxy */ = {
+		F4395EB21DFC3737002E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
 			remoteInfo = "RCTWebSocket-tvOS";
 		};
-		F4677E581DF9EA8400FA332D /* PBXContainerItemProxy */ = {
+		F4395EB61DFC3737002E4C48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
 			remoteInfo = "React-tvOS";
-		};
-		F4B6950E1DF9EFDB00B3E870 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8EE82BCBE4BF48C9B8B9AA11 /* RNSVG.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
-			remoteInfo = RNSVG;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -202,42 +194,31 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* RapsodieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapsodieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* ChloeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChloeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* RapsodieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RapsodieTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* ChloeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChloeTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Rapsodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rapsodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Rapsodie/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Rapsodie/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Chloe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chloe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Chloe/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Chloe/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Rapsodie/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Rapsodie/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Rapsodie/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Chloe/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Chloe/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Chloe/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		155CE0A762AE4EF8B1420D0C /* OpenSans-Regular_Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular_Italic.ttf"; path = "../src/shared/assets/Fonts/OpenSans-Regular_Italic.ttf"; sourceTree = "<group>"; };
-		17D752A5296B47BE8A3F9CA1 /* Bariol-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Bariol-Bold.ttf"; path = "../src/shared/assets/Fonts/Bariol-Bold.ttf"; sourceTree = "<group>"; };
-		2078F97234C0421C988F4FCA /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSVG.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		76D86506602344DFB25FD529 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Semibold.ttf"; path = "../src/shared/assets/Fonts/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
-		7ACD91BD40BC4012A427244F /* OpenSans-Bold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold-Italic.ttf"; path = "../src/shared/assets/Fonts/OpenSans-Bold-Italic.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		8EE82BCBE4BF48C9B8B9AA11 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
-		A6A33E531E55409C88DA44B6 /* Bariol-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Bariol-Regular.ttf"; path = "../src/shared/assets/Fonts/Bariol-Regular.ttf"; sourceTree = "<group>"; };
-		C2307CC38C11478691990FA2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../src/shared/assets/Fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		D2F9D22DB6444A8C8F525830 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../src/shared/assets/Fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		E490C06AAC674ED6A6C5B74F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../src/shared/assets/Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		F4B694DB1DF9EE4400B3E870 /* Bariol-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Bold.ttf"; sourceTree = "<group>"; };
-		F4B694DC1DF9EE4400B3E870 /* Bariol-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Regular.ttf"; sourceTree = "<group>"; };
-		F4B694DD1DF9EE4400B3E870 /* OpenSans-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold-Italic.ttf"; sourceTree = "<group>"; };
-		F4B694DE1DF9EE4400B3E870 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		F4B694DF1DF9EE4400B3E870 /* OpenSans-Light-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light-Italic.ttf"; sourceTree = "<group>"; };
-		F4B694E01DF9EE4400B3E870 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		F4B694E11DF9EE4400B3E870 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		F4B694E21DF9EE4400B3E870 /* OpenSans-Regular_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular_Italic.ttf"; sourceTree = "<group>"; };
-		F4B694E31DF9EE4400B3E870 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		FF6DA207166B48B4B2D681FC /* OpenSans-Light-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light-Italic.ttf"; path = "../src/shared/assets/Fonts/OpenSans-Light-Italic.ttf"; sourceTree = "<group>"; };
+		F4395EB91DFC37E5002E4C48 /* Bariol-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Bold.ttf"; sourceTree = "<group>"; };
+		F4395EBA1DFC37E5002E4C48 /* Bariol-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Regular.ttf"; sourceTree = "<group>"; };
+		F4395EBB1DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		F4395EBC1DFC37E5002E4C48 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F4395EBD1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light-Italic.ttf"; sourceTree = "<group>"; };
+		F4395EBE1DFC37E5002E4C48 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		F4395EBF1DFC37E5002E4C48 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F4395EC01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular_Italic.ttf"; sourceTree = "<group>"; };
+		F4395EC11DFC37E5002E4C48 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,7 +245,6 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				3A0A53DA68C542C395C6A443 /* libRNSVG.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				00C302C01ABCB91800DB3ED1 /* libRCTImage.a */,
-				F4677E401DF9EA8400FA332D /* libRCTImage-tvOS.a */,
+				F4395E9E1DFC3737002E4C48 /* libRCTImage-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,7 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
-				F4677E481DF9EA8400FA332D /* libRCTNetwork-tvOS.a */,
+				F4395EA61DFC3737002E4C48 /* libRCTNetwork-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -313,13 +293,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* RapsodieTests */ = {
+		00E356EF1AD99517003FC87E /* ChloeTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* RapsodieTests.m */,
+				00E356F21AD99517003FC87E /* ChloeTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = RapsodieTests;
+			path = ChloeTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -334,7 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				139105C11AF99BAD00B5F7CC /* libRCTSettings.a */,
-				F4677E4C1DF9EA8400FA332D /* libRCTSettings-tvOS.a */,
+				F4395EAA1DFC3737002E4C48 /* libRCTSettings-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -343,12 +323,12 @@
 			isa = PBXGroup;
 			children = (
 				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
-				F4677E551DF9EA8400FA332D /* libRCTWebSocket-tvOS.a */,
+				F4395EB31DFC3737002E4C48 /* libRCTWebSocket-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Rapsodie */ = {
+		13B07FAE1A68108700A75B9A /* Chloe */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -359,32 +339,16 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = Rapsodie;
+			name = Chloe;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				146834041AC3E56700842450 /* libReact.a */,
-				F4677E591DF9EA8400FA332D /* libReact-tvOS.a */,
+				F4395EB71DFC3737002E4C48 /* libReact-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		427171DBA5D04DC29A424C95 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				17D752A5296B47BE8A3F9CA1 /* Bariol-Bold.ttf */,
-				A6A33E531E55409C88DA44B6 /* Bariol-Regular.ttf */,
-				7ACD91BD40BC4012A427244F /* OpenSans-Bold-Italic.ttf */,
-				D2F9D22DB6444A8C8F525830 /* OpenSans-Bold.ttf */,
-				FF6DA207166B48B4B2D681FC /* OpenSans-Light-Italic.ttf */,
-				C2307CC38C11478691990FA2 /* OpenSans-Light.ttf */,
-				155CE0A762AE4EF8B1420D0C /* OpenSans-Regular_Italic.ttf */,
-				E490C06AAC674ED6A6C5B74F /* OpenSans-Regular.ttf */,
-				76D86506602344DFB25FD529 /* OpenSans-Semibold.ttf */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -400,7 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				78C398B91ACF4ADC00677621 /* libRCTLinking.a */,
-				F4677E441DF9EA8400FA332D /* libRCTLinking-tvOS.a */,
+				F4395EA21DFC3737002E4C48 /* libRCTLinking-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -419,7 +383,6 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				8EE82BCBE4BF48C9B8B9AA11 /* RNSVG.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -428,7 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				832341B51AAA6A8300B99B32 /* libRCTText.a */,
-				F4677E501DF9EA8400FA332D /* libRCTText-tvOS.a */,
+				F4395EAE1DFC3737002E4C48 /* libRCTText-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -436,12 +399,11 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* Rapsodie */,
+				13B07FAE1A68108700A75B9A /* Chloe */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* RapsodieTests */,
+				00E356EF1AD99517003FC87E /* ChloeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
-				F4B694DA1DF9EE4400B3E870 /* Fonts */,
-				427171DBA5D04DC29A424C95 /* Resources */,
+				F4395EB81DFC37E5002E4C48 /* Fonts */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -450,43 +412,35 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Rapsodie.app */,
-				00E356EE1AD99517003FC87E /* RapsodieTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Chloe.app */,
+				00E356EE1AD99517003FC87E /* ChloeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F4B694DA1DF9EE4400B3E870 /* Fonts */ = {
+		F4395EB81DFC37E5002E4C48 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				F4B694DB1DF9EE4400B3E870 /* Bariol-Bold.ttf */,
-				F4B694DC1DF9EE4400B3E870 /* Bariol-Regular.ttf */,
-				F4B694DD1DF9EE4400B3E870 /* OpenSans-Bold-Italic.ttf */,
-				F4B694DE1DF9EE4400B3E870 /* OpenSans-Bold.ttf */,
-				F4B694DF1DF9EE4400B3E870 /* OpenSans-Light-Italic.ttf */,
-				F4B694E01DF9EE4400B3E870 /* OpenSans-Light.ttf */,
-				F4B694E11DF9EE4400B3E870 /* OpenSans-Regular.ttf */,
-				F4B694E21DF9EE4400B3E870 /* OpenSans-Regular_Italic.ttf */,
-				F4B694E31DF9EE4400B3E870 /* OpenSans-Semibold.ttf */,
+				F4395EB91DFC37E5002E4C48 /* Bariol-Bold.ttf */,
+				F4395EBA1DFC37E5002E4C48 /* Bariol-Regular.ttf */,
+				F4395EBB1DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf */,
+				F4395EBC1DFC37E5002E4C48 /* OpenSans-Bold.ttf */,
+				F4395EBD1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf */,
+				F4395EBE1DFC37E5002E4C48 /* OpenSans-Light.ttf */,
+				F4395EBF1DFC37E5002E4C48 /* OpenSans-Regular.ttf */,
+				F4395EC01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf */,
+				F4395EC11DFC37E5002E4C48 /* OpenSans-Semibold.ttf */,
 			);
 			name = Fonts;
 			path = ../src/shared/assets/Fonts;
 			sourceTree = "<group>";
 		};
-		F4B694F81DF9EFDB00B3E870 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F4B6950F1DF9EFDB00B3E870 /* libRNSVG.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* RapsodieTests */ = {
+		00E356ED1AD99517003FC87E /* ChloeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RapsodieTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ChloeTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -497,14 +451,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = RapsodieTests;
-			productName = RapsodieTests;
-			productReference = 00E356EE1AD99517003FC87E /* RapsodieTests.xctest */;
+			name = ChloeTests;
+			productName = ChloeTests;
+			productReference = 00E356EE1AD99517003FC87E /* ChloeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* Rapsodie */ = {
+		13B07F861A680F5B00A75B9A /* Chloe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Rapsodie" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Chloe" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -515,9 +469,9 @@
 			);
 			dependencies = (
 			);
-			name = Rapsodie;
+			name = Chloe;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* Rapsodie.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Chloe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -526,7 +480,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 610;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -539,7 +493,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Rapsodie" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Chloe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -595,15 +549,11 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
-				{
-					ProductGroup = F4B694F81DF9EFDB00B3E870 /* Products */;
-					ProjectRef = 8EE82BCBE4BF48C9B8B9AA11 /* RNSVG.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Rapsodie */,
-				00E356ED1AD99517003FC87E /* RapsodieTests */,
+				13B07F861A680F5B00A75B9A /* Chloe */,
+				00E356ED1AD99517003FC87E /* ChloeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -693,60 +643,53 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F4677E401DF9EA8400FA332D /* libRCTImage-tvOS.a */ = {
+		F4395E9E1DFC3737002E4C48 /* libRCTImage-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTImage-tvOS.a";
-			remoteRef = F4677E3F1DF9EA8400FA332D /* PBXContainerItemProxy */;
+			remoteRef = F4395E9D1DFC3737002E4C48 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F4677E441DF9EA8400FA332D /* libRCTLinking-tvOS.a */ = {
+		F4395EA21DFC3737002E4C48 /* libRCTLinking-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTLinking-tvOS.a";
-			remoteRef = F4677E431DF9EA8400FA332D /* PBXContainerItemProxy */;
+			remoteRef = F4395EA11DFC3737002E4C48 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F4677E481DF9EA8400FA332D /* libRCTNetwork-tvOS.a */ = {
+		F4395EA61DFC3737002E4C48 /* libRCTNetwork-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTNetwork-tvOS.a";
-			remoteRef = F4677E471DF9EA8400FA332D /* PBXContainerItemProxy */;
+			remoteRef = F4395EA51DFC3737002E4C48 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F4677E4C1DF9EA8400FA332D /* libRCTSettings-tvOS.a */ = {
+		F4395EAA1DFC3737002E4C48 /* libRCTSettings-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTSettings-tvOS.a";
-			remoteRef = F4677E4B1DF9EA8400FA332D /* PBXContainerItemProxy */;
+			remoteRef = F4395EA91DFC3737002E4C48 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F4677E501DF9EA8400FA332D /* libRCTText-tvOS.a */ = {
+		F4395EAE1DFC3737002E4C48 /* libRCTText-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTText-tvOS.a";
-			remoteRef = F4677E4F1DF9EA8400FA332D /* PBXContainerItemProxy */;
+			remoteRef = F4395EAD1DFC3737002E4C48 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F4677E551DF9EA8400FA332D /* libRCTWebSocket-tvOS.a */ = {
+		F4395EB31DFC3737002E4C48 /* libRCTWebSocket-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTWebSocket-tvOS.a";
-			remoteRef = F4677E541DF9EA8400FA332D /* PBXContainerItemProxy */;
+			remoteRef = F4395EB21DFC3737002E4C48 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F4677E591DF9EA8400FA332D /* libReact-tvOS.a */ = {
+		F4395EB71DFC3737002E4C48 /* libReact-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libReact-tvOS.a";
-			remoteRef = F4677E581DF9EA8400FA332D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F4B6950F1DF9EFDB00B3E870 /* libRNSVG.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNSVG.a;
-			remoteRef = F4B6950E1DF9EFDB00B3E870 /* PBXContainerItemProxy */;
+			remoteRef = F4395EB61DFC3737002E4C48 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -756,6 +699,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4395ECD1DFC37E5002E4C48 /* OpenSans-Light.ttf in Resources */,
+				F4395EC51DFC37E5002E4C48 /* Bariol-Regular.ttf in Resources */,
+				F4395ED11DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf in Resources */,
+				F4395ED31DFC37E5002E4C48 /* OpenSans-Semibold.ttf in Resources */,
+				F4395EC71DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf in Resources */,
+				F4395ECF1DFC37E5002E4C48 /* OpenSans-Regular.ttf in Resources */,
+				F4395EC91DFC37E5002E4C48 /* OpenSans-Bold.ttf in Resources */,
+				F4395EC31DFC37E5002E4C48 /* Bariol-Bold.ttf in Resources */,
+				F4395ECB1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,26 +715,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B694E41DF9EE4400B3E870 /* Bariol-Bold.ttf in Resources */,
-				F4B694EC1DF9EE4400B3E870 /* OpenSans-Semibold.ttf in Resources */,
+				F4395EC21DFC37E5002E4C48 /* Bariol-Bold.ttf in Resources */,
+				F4395ED21DFC37E5002E4C48 /* OpenSans-Semibold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				F4B694E91DF9EE4400B3E870 /* OpenSans-Light.ttf in Resources */,
-				F4B694E81DF9EE4400B3E870 /* OpenSans-Light-Italic.ttf in Resources */,
-				F4B694EB1DF9EE4400B3E870 /* OpenSans-Regular_Italic.ttf in Resources */,
-				F4B694E71DF9EE4400B3E870 /* OpenSans-Bold.ttf in Resources */,
-				F4B694E61DF9EE4400B3E870 /* OpenSans-Bold-Italic.ttf in Resources */,
-				F4B694E51DF9EE4400B3E870 /* Bariol-Regular.ttf in Resources */,
-				F4B694EA1DF9EE4400B3E870 /* OpenSans-Regular.ttf in Resources */,
+				F4395ECC1DFC37E5002E4C48 /* OpenSans-Light.ttf in Resources */,
+				F4395ECA1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf in Resources */,
+				F4395ED01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf in Resources */,
+				F4395EC81DFC37E5002E4C48 /* OpenSans-Bold.ttf in Resources */,
+				F4395EC61DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf in Resources */,
+				F4395EC41DFC37E5002E4C48 /* Bariol-Regular.ttf in Resources */,
+				F4395ECE1DFC37E5002E4C48 /* OpenSans-Regular.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				1593E59FB9254C9E841BE9A9 /* Bariol-Bold.ttf in Resources */,
-				DA4D4DE9D8F941FA822F1076 /* Bariol-Regular.ttf in Resources */,
-				58B467A9263E4A73A4750F5F /* OpenSans-Bold-Italic.ttf in Resources */,
-				F302A780EA984C0C94CC4D28 /* OpenSans-Bold.ttf in Resources */,
-				0506F60AC11C41AA9BDE931F /* OpenSans-Light-Italic.ttf in Resources */,
-				A0E0B06282274A4282449B9A /* OpenSans-Light.ttf in Resources */,
-				166A0AA453914ADB9CB7C012 /* OpenSans-Regular_Italic.ttf in Resources */,
-				203EF124BDAD4261B4075DA3 /* OpenSans-Regular.ttf in Resources */,
-				CFA0544046AE42CA8E6A11D1 /* OpenSans-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,7 +753,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* RapsodieTests.m in Sources */,
+				00E356F31AD99517003FC87E /* ChloeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,7 +771,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Rapsodie */;
+			target = 13B07F861A680F5B00A75B9A /* Chloe */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -840,7 +783,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = Rapsodie;
+			path = Chloe;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -855,15 +798,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RapsodieTests/Info.plist;
+				INFOPLIST_FILE = ChloeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rapsodie.app/Rapsodie";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chloe.app/Chloe";
 			};
 			name = Debug;
 		};
@@ -873,15 +812,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = P3UQ989JLJ;
-				INFOPLIST_FILE = RapsodieTests/Info.plist;
+				INFOPLIST_FILE = ChloeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rapsodie.app/Rapsodie";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chloe.app/Chloe";
 			};
 			name = Release;
 		};
@@ -892,15 +827,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = P3UQ989JLJ;
-				INFOPLIST_FILE = Rapsodie/Info.plist;
+				INFOPLIST_FILE = Chloe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rapsodie;
-				PRODUCT_NAME = Rapsodie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chloe.app;
+				PRODUCT_NAME = Chloe;
 				TARGETED_DEVICE_FAMILY = 2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -912,15 +847,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P3UQ989JLJ;
-				INFOPLIST_FILE = Rapsodie/Info.plist;
+				INFOPLIST_FILE = Chloe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rapsodie;
-				PRODUCT_NAME = Rapsodie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chloe.app;
+				PRODUCT_NAME = Chloe;
 				TARGETED_DEVICE_FAMILY = 2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -964,7 +899,6 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/ReactCommon/**",
-					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1005,7 +939,6 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/ReactCommon/**",
-					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1017,7 +950,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RapsodieTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ChloeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1026,7 +959,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Rapsodie" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Chloe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1035,7 +968,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Rapsodie" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Chloe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

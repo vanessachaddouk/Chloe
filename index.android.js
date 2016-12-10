@@ -3,4 +3,4 @@
 import { AppRegistry } from 'react-native'
 import Kernel from '@core'
 
-AppRegistry.registerComponent('Rapsodie', () => Kernel)
+AppRegistry.registerComponent('Chloe', () => Kernel)
