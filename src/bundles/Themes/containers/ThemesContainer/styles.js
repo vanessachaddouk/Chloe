@@ -1,20 +1,15 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { SFUIDISPLAY_BOLD } from '@theme/fonts'
+import { DEFAULT_BACKGROUND_COLOR } from '@theme/colors'
 import { rem } from '@helpers/responsive'
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#E0055B',
-  },
-  text: {
-    ...SFUIDISPLAY_BOLD,
-    color: 'white',
-    fontSize: rem(1.125),
+    backgroundColor: DEFAULT_BACKGROUND_COLOR,
+    paddingHorizontal: rem(1.25),
+    paddingVertical: rem(3.125),
   },
 })
 

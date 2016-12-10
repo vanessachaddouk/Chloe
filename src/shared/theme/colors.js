@@ -19,10 +19,19 @@ export const NEUTRAL_COLOR_95 = '#121214'
 export const NEUTRAL_COLOR_100 = '#121212'
 
 // Default colors
+export const DEFAULT_TITLE_COLOR = 'rgba(0,0,0,0.05)'
 export const DEFAULT_TEXT_COLOR = NEUTRAL_COLOR_80
 export const DEFAULT_TEXT_COLOR_LIGHT = NEUTRAL_COLOR_00
+export const DEFAULT_INFOS_COLOR = 'rgba(0,0,0,0.6)'
 export const DEFAULT_BACKGROUND_COLOR = NEUTRAL_COLOR_10
 export const DEFAULT_BACKGROUND_COLOR_DARK = NEUTRAL_COLOR_90
 export const SUCCESS_COLOR = '#53C000'
 export const WARNING_COLOR = '#FFAD1D'
 export const FAIL_COLOR = '#E33258'
+
+// History times colors
+export const PREHISTORY_COLOR = '#F61C0D'
+export const ANTIQUITY_COLOR = '#FDC109'
+export const MIDDLEAGE_COLOR = '#7800E2'
+export const MODERNTIMES_COLOR = '#21D390'
+export const CONTEMPORARYTIMES_COLOR = '#0099FF'

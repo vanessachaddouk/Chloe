@@ -1,8 +1,9 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { Button, Text, View } from 'react-native'
-import { Actions } from 'react-native-router-flux'
+import { ScrollView } from 'react-native'
+import Title from '@components/Title'
+import Tile from '@components/Tile'
 import styles from './styles'
 import connect from './connect'
 
@@ -14,13 +15,19 @@ class ThemesContainer extends Component {
   state: State
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.text}>THEMES SCENE</Text>
-        <Button
-          onPress={Actions.chapters}
-          title="Next"
+      <ScrollView
+        bounces={false}
+        style={styles.container}
+      >
+        <Title size="big">Chloé</Title>
+        <Tile
+          image="https://i.ytimg.com/vi/QrOQiknOE9w/maxresdefault.jpg"
+          period="middleAge"
+          stories={3}
+          title="Les grottes de Lascaux"
+          description="Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! I’m the best thing!"
         />
-      </View>
+      </ScrollView>
     )
   }
 }

@@ -4,7 +4,7 @@
 A generic component for SVG icons.
 
 ### API
-* name: `'arrow' | 'cardio' | 'chill' | 'close' | 'filter' | 'historic' | 'hit' | 'like' | 'location' | 'navigation | 'phone' | 'search' |'share' | 'star' | 'stretching' |'marker'`,
+* name: `string`,
 * actived?: `Boolean`,
 * size?: `Number`,
 * defaultActivedColor?: `String`,
