@@ -1,7 +1,7 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { BARIOL_BOLD } from '@theme/fonts'
+import { SFUIDISPLAY_BOLD } from '@theme/fonts'
 import { rem } from '@helpers/responsive'
 
 const styles = StyleSheet.create({
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E0055B',
   },
   text: {
-    ...BARIOL_BOLD,
+    ...SFUIDISPLAY_BOLD,
     color: 'white',
     fontSize: rem(1.125),
   },

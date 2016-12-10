@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { NavigationExperimental } from 'react-native'
-import { BARIOL_REGULAR } from '@theme/fonts'
+import { SFUIDISPLAY_REGULAR } from '@theme/fonts'
 
 const {
   Header: NavigationHeader,
@@ -20,7 +20,7 @@ export const DEFAULT_NAV_BAR_STYLE = {
 
 export const DEFAULT_NAV_BAR_TITLE_STYLE = {
   top: .75,
-  ...BARIOL_REGULAR,
+  ...SFUIDISPLAY_REGULAR,
   color: 'white',
   fontSize: 15,
   letterSpacing: .75,

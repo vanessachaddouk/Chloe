@@ -4,24 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
   <array>
-    <string>Bariol-Regular.ttf</string>
-    <string>Bariol-Bold.ttf</string>
-    <string>OpenSans-Regular.ttf</string>
-    <string>OpenSans-Regular_Light.ttf</string>
-    <string>OpenSans-Bold-Italic.ttf</string>
-    <string>OpenSans-Bold.ttf</string>
-    <string>OpenSans-Light-Italic.ttf</string>
-    <string>OpenSans-Light.ttf</string>
-    <string>OpenSans-Semibold.ttf</string>
-    <string>Bariol-Bold.ttf</string>
-    <string>Bariol-Regular.ttf</string>
-    <string>OpenSans-Bold-Italic.ttf</string>
-    <string>OpenSans-Bold.ttf</string>
-    <string>OpenSans-Light-Italic.ttf</string>
-    <string>OpenSans-Light.ttf</string>
-    <string>OpenSans-Regular_Italic.ttf</string>
-    <string>OpenSans-Regular.ttf</string>
-    <string>OpenSans-Semibold.ttf</string>
+    <string>SF-UI-Display-Bold.otf</string>
+    <string>SF-UI-Display-Heavy.otf</string>
+    <string>SF-UI-Display-Regular.otf</string>
   </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

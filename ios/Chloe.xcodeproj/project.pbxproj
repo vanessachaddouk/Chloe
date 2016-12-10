@@ -24,24 +24,12 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		F4395EC21DFC37E5002E4C48 /* Bariol-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EB91DFC37E5002E4C48 /* Bariol-Bold.ttf */; };
-		F4395EC31DFC37E5002E4C48 /* Bariol-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EB91DFC37E5002E4C48 /* Bariol-Bold.ttf */; };
-		F4395EC41DFC37E5002E4C48 /* Bariol-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBA1DFC37E5002E4C48 /* Bariol-Regular.ttf */; };
-		F4395EC51DFC37E5002E4C48 /* Bariol-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBA1DFC37E5002E4C48 /* Bariol-Regular.ttf */; };
-		F4395EC61DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBB1DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf */; };
-		F4395EC71DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBB1DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf */; };
-		F4395EC81DFC37E5002E4C48 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBC1DFC37E5002E4C48 /* OpenSans-Bold.ttf */; };
-		F4395EC91DFC37E5002E4C48 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBC1DFC37E5002E4C48 /* OpenSans-Bold.ttf */; };
-		F4395ECA1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBD1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf */; };
-		F4395ECB1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBD1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf */; };
-		F4395ECC1DFC37E5002E4C48 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBE1DFC37E5002E4C48 /* OpenSans-Light.ttf */; };
-		F4395ECD1DFC37E5002E4C48 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBE1DFC37E5002E4C48 /* OpenSans-Light.ttf */; };
-		F4395ECE1DFC37E5002E4C48 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBF1DFC37E5002E4C48 /* OpenSans-Regular.ttf */; };
-		F4395ECF1DFC37E5002E4C48 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EBF1DFC37E5002E4C48 /* OpenSans-Regular.ttf */; };
-		F4395ED01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EC01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf */; };
-		F4395ED11DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EC01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf */; };
-		F4395ED21DFC37E5002E4C48 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EC11DFC37E5002E4C48 /* OpenSans-Semibold.ttf */; };
-		F4395ED31DFC37E5002E4C48 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4395EC11DFC37E5002E4C48 /* OpenSans-Semibold.ttf */; };
+		F40259101DFC4B5F0051F06D /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F402590D1DFC4B5F0051F06D /* SF-UI-Display-Bold.otf */; };
+		F40259111DFC4B5F0051F06D /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F402590D1DFC4B5F0051F06D /* SF-UI-Display-Bold.otf */; };
+		F40259121DFC4B5F0051F06D /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = F402590E1DFC4B5F0051F06D /* SF-UI-Display-Heavy.otf */; };
+		F40259131DFC4B5F0051F06D /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = F402590E1DFC4B5F0051F06D /* SF-UI-Display-Heavy.otf */; };
+		F40259141DFC4B5F0051F06D /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F402590F1DFC4B5F0051F06D /* SF-UI-Display-Regular.otf */; };
+		F40259151DFC4B5F0051F06D /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F402590F1DFC4B5F0051F06D /* SF-UI-Display-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,15 +198,9 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		F4395EB91DFC37E5002E4C48 /* Bariol-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Bold.ttf"; sourceTree = "<group>"; };
-		F4395EBA1DFC37E5002E4C48 /* Bariol-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Regular.ttf"; sourceTree = "<group>"; };
-		F4395EBB1DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold-Italic.ttf"; sourceTree = "<group>"; };
-		F4395EBC1DFC37E5002E4C48 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		F4395EBD1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light-Italic.ttf"; sourceTree = "<group>"; };
-		F4395EBE1DFC37E5002E4C48 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		F4395EBF1DFC37E5002E4C48 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		F4395EC01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular_Italic.ttf"; sourceTree = "<group>"; };
-		F4395EC11DFC37E5002E4C48 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		F402590D1DFC4B5F0051F06D /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		F402590E1DFC4B5F0051F06D /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		F402590F1DFC4B5F0051F06D /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,15 +403,9 @@
 		F4395EB81DFC37E5002E4C48 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				F4395EB91DFC37E5002E4C48 /* Bariol-Bold.ttf */,
-				F4395EBA1DFC37E5002E4C48 /* Bariol-Regular.ttf */,
-				F4395EBB1DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf */,
-				F4395EBC1DFC37E5002E4C48 /* OpenSans-Bold.ttf */,
-				F4395EBD1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf */,
-				F4395EBE1DFC37E5002E4C48 /* OpenSans-Light.ttf */,
-				F4395EBF1DFC37E5002E4C48 /* OpenSans-Regular.ttf */,
-				F4395EC01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf */,
-				F4395EC11DFC37E5002E4C48 /* OpenSans-Semibold.ttf */,
+				F402590D1DFC4B5F0051F06D /* SF-UI-Display-Bold.otf */,
+				F402590E1DFC4B5F0051F06D /* SF-UI-Display-Heavy.otf */,
+				F402590F1DFC4B5F0051F06D /* SF-UI-Display-Regular.otf */,
 			);
 			name = Fonts;
 			path = ../src/shared/assets/Fonts;
@@ -699,15 +675,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4395ECD1DFC37E5002E4C48 /* OpenSans-Light.ttf in Resources */,
-				F4395EC51DFC37E5002E4C48 /* Bariol-Regular.ttf in Resources */,
-				F4395ED11DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf in Resources */,
-				F4395ED31DFC37E5002E4C48 /* OpenSans-Semibold.ttf in Resources */,
-				F4395EC71DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf in Resources */,
-				F4395ECF1DFC37E5002E4C48 /* OpenSans-Regular.ttf in Resources */,
-				F4395EC91DFC37E5002E4C48 /* OpenSans-Bold.ttf in Resources */,
-				F4395EC31DFC37E5002E4C48 /* Bariol-Bold.ttf in Resources */,
-				F4395ECB1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf in Resources */,
+				F40259111DFC4B5F0051F06D /* SF-UI-Display-Bold.otf in Resources */,
+				F40259131DFC4B5F0051F06D /* SF-UI-Display-Heavy.otf in Resources */,
+				F40259151DFC4B5F0051F06D /* SF-UI-Display-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,17 +685,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4395EC21DFC37E5002E4C48 /* Bariol-Bold.ttf in Resources */,
-				F4395ED21DFC37E5002E4C48 /* OpenSans-Semibold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				F4395ECC1DFC37E5002E4C48 /* OpenSans-Light.ttf in Resources */,
-				F4395ECA1DFC37E5002E4C48 /* OpenSans-Light-Italic.ttf in Resources */,
-				F4395ED01DFC37E5002E4C48 /* OpenSans-Regular_Italic.ttf in Resources */,
-				F4395EC81DFC37E5002E4C48 /* OpenSans-Bold.ttf in Resources */,
-				F4395EC61DFC37E5002E4C48 /* OpenSans-Bold-Italic.ttf in Resources */,
-				F4395EC41DFC37E5002E4C48 /* Bariol-Regular.ttf in Resources */,
-				F4395ECE1DFC37E5002E4C48 /* OpenSans-Regular.ttf in Resources */,
+				F40259101DFC4B5F0051F06D /* SF-UI-Display-Bold.otf in Resources */,
+				F40259141DFC4B5F0051F06D /* SF-UI-Display-Regular.otf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				F40259121DFC4B5F0051F06D /* SF-UI-Display-Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

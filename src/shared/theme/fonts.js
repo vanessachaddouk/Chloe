@@ -5,86 +5,29 @@ import { vw, vh } from '@helpers/responsive'
 
 export const DEFAULT_RESPONSIVE_FONT_SIZE = 15 + vw(.125) + vh(.05)
 
-export const BARIOL_BOLD = Platform.OS === 'ios'
+export const SFUIDISPLAY_HEAVY = Platform.OS === 'ios'
   ? {
-    fontFamily: 'Bariol',
+    fontFamily: 'SF UI Display',
+    fontWeight: '800',
+  }
+  : {
+    fontFamily: 'SF-UI-Display-Heavy',
+  }
+
+export const SFUIDISPLAY_BOLD = Platform.OS === 'ios'
+  ? {
+    fontFamily: 'SF UI Display',
     fontWeight: '700',
   }
   : {
-    fontFamily: 'Bariol-Bold',
+    fontFamily: 'SF-UI-Display-Bold',
   }
 
-export const BARIOL_REGULAR = Platform.OS === 'ios'
+export const SFUIDISPLAY_REGULAR = Platform.OS === 'ios'
   ? {
-    fontFamily: 'Bariol',
+    fontFamily: 'SF UI Display',
     fontWeight: '400',
   }
   : {
-    fontFamily: 'Bariol-Regular',
-  }
-
-export const OPENSANS_LIGHT = Platform.OS === 'ios'
-  ? {
-    fontFamily: 'OpenSans',
-    fontWeight: '200',
-  }
-  : {
-    fontFamily: 'OpenSans-Light',
-  }
-
-export const OPENSANS_LIGHT_ITALIC = Platform.OS === 'ios'
-  ? {
-    fontFamily: 'OpenSans',
-    fontWeight: '200',
-    fontStyle: 'italic',
-  }
-  : {
-    fontFamily: 'OpenSans-Light-Italic',
-  }
-
-export const OPENSANS_REGULAR = Platform.OS === 'ios'
-  ? {
-    fontFamily: 'OpenSans',
-    fontWeight: '400',
-  }
-  : {
-    fontFamily: 'OpenSans-Regular',
-  }
-
-export const OPENSANS_REGULAR_ITALIC = Platform.OS === 'ios'
-  ? {
-    fontFamily: 'OpenSans',
-    fontWeight: '400',
-    fontStyle: 'italic',
-  }
-  : {
-    fontFamily: 'OpenSans-Regular_Italic',
-  }
-
-export const OPENSANS_SEMI_BOLD = Platform.OS === 'ios'
-  ? {
-    fontFamily: 'OpenSans',
-    fontWeight: '600',
-  }
-  : {
-    fontFamily: 'OpenSans-Semibold',
-  }
-
-export const OPENSANS_BOLD = Platform.OS === 'ios'
-  ? {
-    fontFamily: 'OpenSans',
-    fontWeight: '700',
-  }
-  : {
-    fontFamily: 'OpenSans-Bold',
-  }
-
-export const OPENSANS_BOLD_ITALIC = Platform.OS === 'ios'
-  ? {
-    fontFamily: 'OpenSans',
-    fontWeight: '700',
-    fontStyle: 'italic',
-  }
-  : {
-    fontFamily: 'OpenSans-Bold-Italic',
+    fontFamily: 'SF-UI-Display-Regular',
   }
