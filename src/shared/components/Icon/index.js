@@ -22,9 +22,6 @@ const Icon = (props: Props): React$Element<any> | null => {
     : defaultColor || NEUTRAL_COLOR_55
   let icon
   switch (name) {
-    case 'preHistory':
-      icon = require('./PreHistory').default
-      break
     case 'antiquity':
       icon = require('./Antiquity').default
       break
@@ -33,6 +30,12 @@ const Icon = (props: Props): React$Element<any> | null => {
       break
     case 'modernTimes':
       icon = require('./ModernTimes').default
+      break
+    case 'preHistory':
+      icon = require('./PreHistory').default
+      break
+    case 'bookmarkIcon':
+      icon = require('./BookmarkIcon').default
       break
     // case 'contemporaryTimes':
     //   icon = require('./ContemporaryTimes').default

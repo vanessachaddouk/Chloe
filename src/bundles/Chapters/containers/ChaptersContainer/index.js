@@ -1,9 +1,12 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { Button, Text, View } from 'react-native'
+import { ScrollView, View } from 'react-native'
 import { Actions } from 'react-native-router-flux'
+import { rem } from '@helpers/responsive'
+import BackButton from '@components/BackButton'
 import Tile from '@components/Tile'
+import Title from '@components/Title'
 import styles from './styles'
 import connect from './connect'
 
@@ -16,20 +19,35 @@ class ChaptersContainer extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button
+        <BackButton
           onPress={() => Actions.themes({ type: 'back' })}
-          title="Back"
+          title="Retour"
         />
-        <Text style={styles.text}>CHAPTERS SCENE</Text>
-        <Button
-          onPress={Actions.storyOverview}
-          title="Next"
-        />
-        <Tile
-          title="7 merveilles du Monde"
-          description="7 histoires"
-          image="https://www.herodote.net/Images/germanos.jpg"
-        />
+        <Title size="medium" style={styles.title}>Les 7 merveilles du monde</Title>
+        <ScrollView
+          horizontal={true}
+          contentContainerStyle={styles.scrollview}
+        >
+          {Array.from({ length: 7 }, (a, index) => index).map((item) => (
+            <Tile
+              key={item}
+              image="https://s24.postimg.org/wtqa13nr9/colossus_of_rhodes.jpg"
+              period="antiquity"
+              pages={12}
+              duration={25}
+              title="Le colosse de Rhodes"
+              description="Look at that text! Would anyone use that? Can you imagine that?!"
+              onPress={Actions.storyOverview}
+              style={[
+                styles.tile,
+                {
+                  marginLeft: item === 0 ? rem(2.1875) : 0,
+                  marginRight: item === 6 ? rem(2.1875) : rem(3.75),
+                }]
+              }
+            />
+          ))}
+        </ScrollView>
       </View>
     )
   }
