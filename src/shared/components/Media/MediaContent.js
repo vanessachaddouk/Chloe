@@ -2,6 +2,8 @@
 
 import React from 'react'
 import { Image, Text, View } from 'react-native'
+import { getPeriodColor } from '@helpers/periods'
+import Icon from '@components/Icon'
 import styles from './styles'
 
 type Props = {
@@ -9,10 +11,11 @@ type Props = {
   image?: string,
   tileNumber?: number,
   tileText?: string,
+  period?: string,
 }
 
 const MediaContent = (props: Props): React$Element<any> => {
-  const { bookmarked, image, tileNumber, tileText } = props
+  const { bookmarked, image, tileNumber, tileText, period } = props
   return (
     <Image
       resizeMode="cover"
@@ -27,6 +30,14 @@ const MediaContent = (props: Props): React$Element<any> => {
             <View style={styles.titleContainer}>
               <Text style={styles.title}>{tileText}</Text>
             </View>
+          }
+          {bookmarked &&
+            <Icon
+              name="bookmarkRibbon"
+              defaultColor={getPeriodColor(period)}
+              size={25}
+              style={styles.icon}
+            />
           }
         </View>
       }

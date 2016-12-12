@@ -15,6 +15,7 @@ type Props = {
   tileNumber?: number,
   tileText?: string,
   style?: StyleSheet | number,
+  period?: string,
 }
 
 type State = { y: number }
@@ -54,7 +55,7 @@ class Media extends Component {
   }
 
   render() {
-    const { bookmarked, draggable, image, onPress, tileNumber, tileText, style } = this.props
+    const { bookmarked, draggable, image, onPress, tileNumber, tileText, style, period } = this.props
     return draggable
     ? (
        <Animatable.View
@@ -69,6 +70,7 @@ class Media extends Component {
            image={image}
            tileNumber={tileNumber}
            tileText={tileText}
+           period={period}
          />
        </Animatable.View>
       )
@@ -80,6 +82,7 @@ class Media extends Component {
              image={image}
              tileNumber={tileNumber}
              tileText={tileText}
+             period={period}
            />
          </View>
        </TouchableWithoutFeedback>

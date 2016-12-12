@@ -2,7 +2,9 @@
 
 import React from 'react'
 import { Image, Text, TouchableWithoutFeedback, View } from 'react-native'
+import { getPeriodColor } from '@helpers/periods'
 import HistoricTime from '@components/HistoricTime'
+import Icon from '@components/Icon'
 import styles from './styles'
 
 type Props = {
@@ -14,11 +16,12 @@ type Props = {
   title: string,
   description?: string,
   onPress?: Function,
+  locked?: boolean,
   style?: StyleSheet | Array<Object> | number,
 }
 
 const Tile = (props: Props): React$Element<any> => {
-  const { description, image, stories, pages, duration, title, period, onPress, style } = props
+  const { description, image, stories, pages, duration, title, period, onPress, locked, style } = props
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View
@@ -29,7 +32,17 @@ const Tile = (props: Props): React$Element<any> => {
             resizeMode="cover"
             style={styles.image}
             source={{ uri: image }}
-          />
+          >
+            {locked &&
+              <View style={styles.overlay}>
+                <Icon
+                  name="locker"
+                  defaultColor={pages ? getPeriodColor(period) : '#FEFEFE'}
+                  size={60}
+                />
+              </View>
+            }
+          </Image>
         </View>
         {(period || stories) &&
           <View style={styles.infosContainer}>

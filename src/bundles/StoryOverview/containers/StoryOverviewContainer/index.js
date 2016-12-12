@@ -30,9 +30,11 @@ class StoryOverviewContainer extends Component {
           {Array.from({ length: 25 }, (a, index) => index).map((item) => (
             <Media
               key={item}
+              bookmarked={item === 0}
               image="https://s24.postimg.org/wtqa13nr9/colossus_of_rhodes.jpg"
               tileNumber={item + 1}
               draggable={false}
+              period="antiquity"
               onPress={Actions.story}
               style={styles.mediaTile}
             />

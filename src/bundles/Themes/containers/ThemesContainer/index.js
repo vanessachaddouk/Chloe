@@ -28,10 +28,11 @@ class ThemesContainer extends Component {
                 key={item}
                 image="https://s24.postimg.org/3yeq7gw1h/artemis.jpg"
                 period="antiquity"
-                stories={3}
+                stories={8}
                 title="Les 7 merveilles du monde"
                 description="Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! I’m the best thing!"
-                onPress={Actions.chapters}
+                onPress={item === 0 ? Actions.chapters : null}
+                locked={item > 0}
                 style={styles.tile}
               />
             ))}

@@ -1,7 +1,6 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { DEFAULT_BOX_SHADOW } from '@theme/box-shadows'
 import { DEFAULT_INFOS_COLOR, DEFAULT_TEXT_COLOR } from '@theme/colors'
 import { SFUIDISPLAY_HEAVY, SFUIDISPLAY_LIGHT, SFUIDISPLAY_REGULAR } from '@theme/fonts'
 import { rem } from '@helpers/responsive'
@@ -11,7 +10,6 @@ const styles = StyleSheet.create({
     width: rem(17.8125),
   },
   imageContainer: {
-    ...DEFAULT_BOX_SHADOW,
     width: rem(17.8125),
     height: rem(11.5625),
     borderRadius: rem(0.375),
@@ -21,6 +19,13 @@ const styles = StyleSheet.create({
     width: rem(17.8125),
     height: rem(11.5625),
     borderRadius: rem(0.375),
+  },
+  overlay: {
+    width: rem(17.8125),
+    height: rem(11.5625),
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.3)',
   },
   infosContainer: {
     width: rem(17.8125),

@@ -3,6 +3,7 @@
 import { StyleSheet } from 'react-native'
 import { DEFAULT_TEXT_COLOR, DEFAULT_TEXT_COLOR_LIGHT, DEFAULT_BACKGROUND_COLOR } from '@theme/colors'
 import { SFUIDISPLAY_BLACK } from '@theme/fonts'
+import { DEFAULT_BOX_SHADOW } from '@theme/box-shadows'
 import { rem } from '@helpers/responsive'
 
 const styles = StyleSheet.create({
@@ -42,6 +43,12 @@ const styles = StyleSheet.create({
     fontSize: rem(1.25),
     color: DEFAULT_TEXT_COLOR,
     letterSpacing: -0.30,
+  },
+  icon: {
+    position: 'absolute',
+    zIndex: 10,
+    top: -1,
+    right: rem(1.25),
   },
 })
 

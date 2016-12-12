@@ -37,7 +37,8 @@ class ChaptersContainer extends Component {
               duration={25}
               title="Le colosse de Rhodes"
               description="Look at that text! Would anyone use that? Can you imagine that?!"
-              onPress={Actions.storyOverview}
+              onPress={item === 0 ? Actions.storyOverview : null}
+              locked={item > 0}
               style={[
                 styles.tile,
                 {
