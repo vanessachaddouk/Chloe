@@ -19,7 +19,7 @@ export const NEUTRAL_COLOR_95 = '#121214'
 export const NEUTRAL_COLOR_100 = '#121212'
 
 // Default colors
-export const DEFAULT_TITLE_COLOR = 'rgba(0,0,0,0.05)'
+export const DEFAULT_TITLE_COLOR = '#CBCBCB'
 export const DEFAULT_TEXT_COLOR = NEUTRAL_COLOR_80
 export const DEFAULT_TEXT_COLOR_LIGHT = NEUTRAL_COLOR_00
 export const DEFAULT_INFOS_COLOR = 'rgba(0,0,0,0.6)'

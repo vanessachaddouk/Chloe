@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     ...SFUIDISPLAY_REGULAR,
     fontSize: rem(0.75),
     color: DEFAULT_INFOS_COLOR,
+    backgroundColor: 'transparent',
   },
   textBold: {
     ...SFUIDISPLAY_HEAVY,
@@ -46,6 +47,7 @@ const styles = StyleSheet.create({
     fontSize: rem(1.375),
     letterSpacing: -0.5,
     marginVertical: rem(0.3125),
+    backgroundColor: 'transparent',
   },
   description: {
     ...SFUIDISPLAY_LIGHT,
@@ -53,6 +55,7 @@ const styles = StyleSheet.create({
     fontSize: rem(0.875),
     lineHeight: rem(1.3125),
     textAlign: 'justify',
+    backgroundColor: 'transparent',
   },
 })
 

@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     letterSpacing: -0.5,
     marginLeft: rem(2.1875),
     marginTop: rem(2.5),
+    backgroundColor: 'transparent',
   },
 })
 

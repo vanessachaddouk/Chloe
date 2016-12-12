@@ -38,7 +38,7 @@ const Tile = (props: Props): React$Element<any> => {
                 <Icon
                   name="locker"
                   defaultColor={pages ? getPeriodColor(period) : '#FEFEFE'}
-                  size={60}
+                  size={30}
                 />
               </View>
             }

@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     fontSize: rem(0.75),
     color: DEFAULT_INFOS_COLOR,
     marginLeft: rem(0.3125),
+    backgroundColor: 'transparent',
   },
   textBold: {
     ...SFUIDISPLAY_HEAVY,

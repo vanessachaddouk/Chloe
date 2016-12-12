@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     ...SFUIDISPLAY_HEAVY,
     color: DEFAULT_TITLE_COLOR,
     letterSpacing: -2.5,
+    backgroundColor: 'transparent',
   },
 })
 
