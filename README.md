@@ -26,7 +26,7 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 Just clone the repo and start :
 ```shell
 git clone https://github.com/CharlesMangwa/chloe.git Chloe
-cd chloe
+cd Chloe
 yarn        # Install Node.js components listed in your package.json with Yarn 😺
 ```
 
