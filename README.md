@@ -16,7 +16,7 @@ Take your kids to dreamland with Chloé, the connected lamp 💡
 See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
 
 ## Stack
-- [React Native](https://facebook.github.io/react-native/) `0.39.1` for building native apps using React
+- [React Native](https://facebook.github.io/react-native/) `0.39.2` for building native apps using React
 - [Redux](http://redux.js.org/) `3.5.x` a predictable state container for JavaScript apps
 - [Babel](http://babeljs.io/) `6.x.x` for ES6+ support
 - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) `3.x.x` a router based on ExperimentalNavigation API
