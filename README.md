@@ -25,8 +25,8 @@ See [Getting Started](https://facebook.github.io/react-native/docs/getting-start
 ## Make the magic happen
 Just clone the repo and start :
 ```shell
-git clone https://github.com/CharlesMangwa/rapsodie.git Rapsodie
-cd Rapsodie
+git clone https://github.com/CharlesMangwa/chloe.git Chloe
+cd chloe
 yarn        # Install Node.js components listed in your package.json with Yarn 😺
 ```
 
@@ -61,7 +61,7 @@ yarn build-ios
 yarn build-android
 ```
 
-* And tada 💥 !!
+* And tada 🔥 !!
 
 ## Issues
 If you run into any issues please see the [Getting Started](http://facebook.github.io/react-native/docs/getting-started.html) guide for React Native before submitting an issue.
