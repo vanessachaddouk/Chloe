@@ -25,6 +25,15 @@ const Icon = (props: Props): React$Element<any> | null => {
     case 'antiquity':
       icon = require('./Antiquity').default
       break
+    case 'bookmarkIcon':
+      icon = require('./BookmarkIcon').default
+      break
+    case 'bookmarkRibbon':
+      icon = require('./BookmarkRibbon').default
+      break
+    case 'locker':
+      icon = require('./Locker').default
+      break
     case 'middleAge':
       icon = require('./MiddleAge').default
       break
@@ -33,9 +42,6 @@ const Icon = (props: Props): React$Element<any> | null => {
       break
     case 'preHistory':
       icon = require('./PreHistory').default
-      break
-    case 'bookmarkIcon':
-      icon = require('./BookmarkIcon').default
       break
     // case 'contemporaryTimes':
     //   icon = require('./ContemporaryTimes').default
@@ -46,7 +52,7 @@ const Icon = (props: Props): React$Element<any> | null => {
     ? <View style={style}>
         {createElement(
           icon,
-          { color, size }
+          { color, size },
         )}
       </View>
     : null

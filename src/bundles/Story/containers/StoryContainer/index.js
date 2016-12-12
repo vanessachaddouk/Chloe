@@ -7,11 +7,10 @@ import styles from './styles'
 import connect from './connect'
 
 type Props = {}
-type State = {}
 
 class StoryContainer extends Component {
   props: Props
-  state: State
+
   render() {
     return (
       <View style={styles.container}>

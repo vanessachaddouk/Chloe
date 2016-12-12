@@ -1,18 +1,20 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { Image, Text, View } from 'react-native'
+import { TouchableWithoutFeedback, View } from 'react-native'
 import * as Animatable from 'react-native-animatable'
 import { animations } from '@helpers/animations'
+import MediaContent from './MediaContent'
 import styles from './styles'
 
 type Props = {
-  bookmarked?: boolean,
-  description: string,
   image: string,
-  locked?: boolean,
+  bookmarked?: boolean,
+  draggable?: boolean,
+  onPress?: Function,
   tileNumber?: number,
-  title: string,
+  tileText?: string,
+  style?: StyleSheet | number,
 }
 
 type State = { y: number }
@@ -30,7 +32,7 @@ class Media extends Component {
     this.drag.y = e.nativeEvent.pageY
   }
 
-  resetPosition = (e: Event) => {
+  resetPosition = () => {
     this.dragging = false
     if (this.state.y < -100) {
       // Media goes down
@@ -52,29 +54,35 @@ class Media extends Component {
   }
 
   render() {
-    const { bookmarked, description, image, locked, tileNumber, title } = this.props
-    return (
-      <Animatable.View
-        onResponderMove={this.setPosition}
-        onResponderRelease={this.resetPosition}
-        onStartShouldSetResponder={this.onStartShouldSetResponder}
-        ref={(c) => { this.view = c }}
-        style={[styles.container, { transform: [{ translateY: this.state.y }] }]}
-      >
-        <Image
-          resizeMode="cover"
-          resizeMethod="scale"
-          source={{ uri: image }}
-          style={styles.image}
-        >
-          <View style={styles.numberWrapper}>
-            <View style={styles.overlay} />
-          </View>
-        </Image>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.title}>{this.state.y}</Text>
-        <Text style={styles.description}>{description}</Text>
-      </Animatable.View>
+    const { bookmarked, draggable, image, onPress, tileNumber, tileText, style } = this.props
+    return draggable
+    ? (
+       <Animatable.View
+         onResponderMove={this.setPosition}
+         onResponderRelease={this.resetPosition}
+         onStartShouldSetResponder={this.onStartShouldSetResponder}
+         ref={(c) => { this.view = c }}
+         style={[styles.container, { transform: [{ translateY: this.state.y }] }, style]}
+       >
+         <MediaContent
+           bookmarked={bookmarked}
+           image={image}
+           tileNumber={tileNumber}
+           tileText={tileText}
+         />
+       </Animatable.View>
+      )
+    : (
+       <TouchableWithoutFeedback onPress={onPress}>
+         <View style={style}>
+           <MediaContent
+             bookmarked={bookmarked}
+             image={image}
+             tileNumber={tileNumber}
+             tileText={tileText}
+           />
+         </View>
+       </TouchableWithoutFeedback>
     )
   }
 }

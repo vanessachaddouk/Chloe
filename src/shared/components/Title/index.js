@@ -8,7 +8,7 @@ import styles from './styles'
 type Props = {
   children: string,
   size: 'small' | 'medium' | 'big',
-  style: StyleSheet | number,
+  style?: StyleSheet | number,
 }
 
 const Title = (props: Props): React$Element<any> => {

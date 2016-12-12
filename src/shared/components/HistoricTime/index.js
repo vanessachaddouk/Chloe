@@ -7,7 +7,7 @@ import Icon from '@components/Icon'
 import styles from './styles'
 
 type Props = {
-  value: 'preHistory' | 'antiquity' | 'middleAge' | 'modernTimes' | 'contemporaryTimes' | undefined,
+  value: 'preHistory' | 'antiquity' | 'middleAge' | 'modernTimes' | 'contemporaryTimes',
   pages?: number,
 }
 
@@ -20,12 +20,8 @@ const HistoricTime = (props: Props): React$Element<any> => {
         defaultColor={getPeriodColor(value)}
         size={16}
       />
-      {pages &&
-        <Text style={styles.text}><Text style={styles.textBold}>{pages}</Text> pages</Text>
-      }
-      {!pages &&
-        <Text style={styles.text}>{getPeriodName(value)}</Text>
-      }
+      {pages && <Text style={styles.text}><Text style={styles.textBold}>{pages}</Text> pages</Text>}
+      {!pages && <Text style={styles.text}>{getPeriodName(value)}</Text>}
     </View>
   )
 }

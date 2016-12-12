@@ -6,7 +6,7 @@ import styles from './styles'
 
 type Props = {
   onPress: Function,
-  style: StyleSheet | number,
+  style?: StyleSheet | number,
   title: string,
 }
 

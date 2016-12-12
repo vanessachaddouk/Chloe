@@ -9,11 +9,10 @@ import styles from './styles'
 import connect from './connect'
 
 type Props = {}
-type State = {}
 
 class ThemesContainer extends Component {
   props: Props
-  state: State
+
   render() {
     return (
       <View style={styles.container}>

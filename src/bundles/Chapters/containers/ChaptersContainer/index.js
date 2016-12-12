@@ -11,11 +11,10 @@ import styles from './styles'
 import connect from './connect'
 
 type Props = {}
-type State = {}
 
 class ChaptersContainer extends Component {
   props: Props
-  state: State
+
   render() {
     return (
       <View style={styles.container}>
@@ -26,6 +25,7 @@ class ChaptersContainer extends Component {
         <Title size="medium" style={styles.title}>Les 7 merveilles du monde</Title>
         <ScrollView
           horizontal={true}
+          showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.scrollview}
         >
           {Array.from({ length: 7 }, (a, index) => index).map((item) => (
