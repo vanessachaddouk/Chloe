@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     marginTop: rem(3.125),
   },
   scrollview: {
-    marginTop: rem(3.125),
+    marginTop: rem(4.375),
   },
   tile: {
     marginRight: rem(3.75),

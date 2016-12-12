@@ -23,7 +23,7 @@ class ThemesContainer extends Component {
         >
           <Title size="big" style={styles.title}>Chloé</Title>
           <View style={styles.wrapper}>
-            {Array.from({ length: 6 }, (a, index) => index).map((item) => (
+            {Array.from({ length: 7 }, (a, index) => index).map((item) => (
               <Tile
                 key={item}
                 image="https://s24.postimg.org/3yeq7gw1h/artemis.jpg"

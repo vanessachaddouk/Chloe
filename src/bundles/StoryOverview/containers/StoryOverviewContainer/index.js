@@ -13,7 +13,7 @@ type Props = {}
 
 class StoryOverviewContainer extends Component {
   props: Props
-  
+
   render() {
     return (
       <View style={styles.container}>
