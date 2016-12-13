@@ -1,7 +1,7 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { TouchableWithoutFeedback, View } from 'react-native'
+import { Button, TouchableWithoutFeedback, View } from 'react-native'
 import * as Animatable from 'react-native-animatable'
 import { animations } from '@helpers/animations'
 import MediaContent from './MediaContent'
@@ -76,7 +76,7 @@ class Media extends Component {
       )
     : (
        <TouchableWithoutFeedback onPress={onPress}>
-         <View style={style}>
+         <View style={[styles.container, style]}>
            <MediaContent
              bookmarked={bookmarked}
              image={image}
@@ -84,6 +84,10 @@ class Media extends Component {
              tileText={tileText}
              period={period}
            />
+           {/* <Button
+             title="Press"
+             onPress={onPress}
+           /> */}
          </View>
        </TouchableWithoutFeedback>
     )

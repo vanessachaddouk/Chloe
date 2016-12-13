@@ -1,9 +1,8 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { DEFAULT_TEXT_COLOR, DEFAULT_TEXT_COLOR_LIGHT, DEFAULT_BACKGROUND_COLOR } from '@theme/colors'
+import { DEFAULT_TEXT_COLOR_LIGHT, NEUTRAL_COLOR_20, NEUTRAL_COLOR_90 } from '@theme/colors'
 import { SFUIDISPLAY_BLACK } from '@theme/fonts'
-import { DEFAULT_BOX_SHADOW } from '@theme/box-shadows'
 import { rem } from '@helpers/responsive'
 
 const styles = StyleSheet.create({
@@ -36,12 +35,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 6,
-    backgroundColor: DEFAULT_BACKGROUND_COLOR,
+    backgroundColor: NEUTRAL_COLOR_20,
   },
   title: {
     ...SFUIDISPLAY_BLACK,
     fontSize: rem(1.25),
-    color: DEFAULT_TEXT_COLOR,
+    color: NEUTRAL_COLOR_90,
     letterSpacing: -0.30,
   },
   icon: {

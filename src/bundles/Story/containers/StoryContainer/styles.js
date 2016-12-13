@@ -7,9 +7,9 @@ import { rem } from '@helpers/responsive'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#45CCFF',
+    flexDirection: 'row',
   },
   text: {
     ...SFUIDISPLAY_BOLD,
