@@ -1,7 +1,7 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { DEFAULT_BACKGROUND_COLOR, DEFAULT_TEXT_COLOR, DEFAULT_TEXT_COLOR_LIGHT, DEFAULT_TITLE_COLOR } from '@theme/colors'
+import { DEFAULT_TEXT_COLOR, DEFAULT_TEXT_COLOR_LIGHT, DEFAULT_TITLE_COLOR, NEUTRAL_COLOR_40 } from '@theme/colors'
 import { SFUIDISPLAY_BOLD, SFUIDISPLAY_HEAVY, SFUIDISPLAY_LIGHT } from '@theme/fonts'
 import { rem } from '@helpers/responsive'
 
@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
     height: rem(5),
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 2,
+    borderWidth: rem(0.125),
     borderRadius: 6,
-    borderColor: DEFAULT_BACKGROUND_COLOR,
+    borderColor: NEUTRAL_COLOR_40,
   },
   questionMark: {
     ...SFUIDISPLAY_BOLD,
