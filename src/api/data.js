@@ -18,6 +18,7 @@ export const API = {
           description: 'Elle fait partie des constructions les plus massives du monde et est la seule merveille à toujours être debout !',
           duration: 20,
           nbPages: 35,
+          availability: '25/12',
         },
         {
           id: 1,
@@ -28,6 +29,7 @@ export const API = {
           description: 'Le plus ancien traité de paix encore existant est vieux de 3200 ans entre l’Égypte et l’Empire hittite !',
           duration: 10,
           nbPages: 17,
+          availability: '25/12',
         },
         {
           id: 2,
@@ -38,6 +40,7 @@ export const API = {
           description: "Plonge dans l'histoire du mausolée le plus fastueux du monde Antique !",
           duration: 18,
           nbPages: 32,
+          availability: '25/12',
         },
         {
           id: 3,
@@ -48,6 +51,7 @@ export const API = {
           description: "Découvre l’un des plus beau lieu du monde Antique. Merveille d'architecture, de technologie et de végétation !",
           duration: 5,
           nbPages: 12,
+          availability: '25/12',
         },
         {
           id: 4,
@@ -58,6 +62,7 @@ export const API = {
           description: "Le temple d'Artémis à Éphèse est dans l'Antiquité l'un des plus importants sanctuaires de la Nature sauvage !",
           duration: 30,
           nbPages: 42,
+          availability: '25/12',
         },
         {
           id: 5,
@@ -68,6 +73,7 @@ export const API = {
           description: 'Part à la découverte de la gigantesque statue de Zeus à Olympie, la cité des Dieux !',
           duration: 3,
           nbPages: 9,
+          availability: '25/12',
         },
         {
           id: 6,
@@ -78,6 +84,7 @@ export const API = {
           description: 'Cette tour imposante était l’un des premier phare au monde et une prouesse technologique pour l’époque !',
           duration: 20,
           nbPages: 35,
+          availability: '25/12',
         },
       ],
     },
@@ -92,23 +99,25 @@ export const API = {
       histories: [
         {
           id: 0,
-          locked: false,
+          locked: true,
           image: 'https://s23.postimg.org/otellv1ez/mozart_wolfgang_amadeus_527a7a17c1157.jpg',
           name: 'Wolfgang Amadeus Mozart',
           period: 'modernTimes',
           description: 'Va à la rencontre de Mozart, l’enfant prodige de la musique classique en découvrant la grandeur de son Oeuvre !',
           duration: 20,
           nbPages: 35,
+          availability: '25/12',
         },
         {
           id: 1,
-          locked: false,
+          locked: true,
           image: 'https://s24.postimg.org/6fczcddut/maxresdefault.jpg',
           name: 'Ludwig Van Beethoven',
           period: 'modernTimes',
           description: 'Découvre le destin du dernier grand compositeur du classicisme !',
           duration: 10,
           nbPages: 17,
+          availability: '25/12',
         },
         {
           id: 2,
@@ -119,6 +128,7 @@ export const API = {
           description: "Sa musique est encore aujourd'hui l'une des plus jouées et demeure un passage indispensable au piano !",
           duration: 18,
           nbPages: 32,
+          availability: '25/12',
         },
         {
           id: 3,
@@ -129,6 +139,7 @@ export const API = {
           description: 'Il a été l’un des virtuoses du violon les plus célèbres de la période baroque !',
           duration: 5,
           nbPages: 12,
+          availability: '25/12',
         },
       ],
     },
@@ -140,6 +151,8 @@ export const API = {
       description: "Explore les grottes de la Préhistoire et admire les plus vieux chefs d'oeuvre de l’histoire de l’Humanité !",
       nbStories: 5,
       locked: true,
+      price: 1.99,
+      availability: '25/12',
     },
     {
       id: 3,
@@ -149,6 +162,8 @@ export const API = {
       description: 'Part à la rencontre de ceux qui ont changé notre façon de voir le monde. Les philosophes des Lumières !',
       nbStories: 4,
       locked: true,
+      price: 1.99,
+      availability: '25/12',
     },
     {
       id: 4,
@@ -158,6 +173,8 @@ export const API = {
       description: "Voyage à la découverte de l'art de la porcelaine chinoise à travers les âges, de la céramique Xing aux vases Ming !",
       nbStories: 3,
       locked: true,
+      price: 1.99,
+      availability: '25/12',
     },
     {
       id: 5,
@@ -167,6 +184,8 @@ export const API = {
       description: 'Découvre les plus belles oeuvres du peintre Pablo Picasso pour le comprendre de sa période bleu au cubisme !',
       nbStories: 5,
       locked: true,
+      price: 1.99,
+      availability: '25/12',
     },
     {
       id: 6,
@@ -176,6 +195,8 @@ export const API = {
       description: 'Admire les créations de l’une des plus grandes civilisations d’Amérique du Sud à travers leurs temples & sculptures !',
       nbStories: 7,
       locked: true,
+      price: 1.99,
+      availability: '25/12',
     },
   ],
   facts: [

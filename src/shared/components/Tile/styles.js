@@ -1,7 +1,7 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { DEFAULT_INFOS_COLOR, DEFAULT_TEXT_COLOR } from '@theme/colors'
+import { DEFAULT_INFOS_COLOR, DEFAULT_TEXT_COLOR, DEFAULT_TEXT_COLOR_LIGHT } from '@theme/colors'
 import { SFUIDISPLAY_HEAVY, SFUIDISPLAY_LIGHT, SFUIDISPLAY_REGULAR } from '@theme/fonts'
 import { rem } from '@helpers/responsive'
 
@@ -38,8 +38,18 @@ const styles = StyleSheet.create({
     color: DEFAULT_INFOS_COLOR,
     backgroundColor: 'transparent',
   },
+  textLight: {
+    ...SFUIDISPLAY_REGULAR,
+    fontSize: rem(0.75),
+    color: DEFAULT_TEXT_COLOR_LIGHT,
+    letterSpacing: -0.3,
+  },
   textBold: {
     ...SFUIDISPLAY_HEAVY,
+  },
+  availabilityContainer: {
+    alignSelf: 'center',
+    flexDirection: 'row',
   },
   title: {
     ...SFUIDISPLAY_HEAVY,
@@ -56,6 +66,18 @@ const styles = StyleSheet.create({
     lineHeight: rem(1.3125),
     textAlign: 'justify',
     backgroundColor: 'transparent',
+  },
+  price: {
+    ...SFUIDISPLAY_HEAVY,
+    fontSize: rem(2),
+    color: DEFAULT_TEXT_COLOR_LIGHT,
+    letterSpacing: -0.80,
+    marginTop: rem(4.375),
+    marginBottom: rem(3.125),
+  },
+  icon: {
+    marginTop: rem(4.375),
+    marginBottom: rem(3.125),
   },
 })
 

@@ -50,6 +50,7 @@ class ChaptersContainer extends Component {
                 : null
               }
               locked={history.locked}
+              availability={history.availability}
               style={[
                 styles.tile,
                 {

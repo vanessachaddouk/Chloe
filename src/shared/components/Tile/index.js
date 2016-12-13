@@ -15,13 +15,15 @@ type Props = {
   duration?: number,
   title: string,
   description?: string,
+  price?: number,
   onPress?: Function,
   locked?: boolean,
+  availability?: string,
   style?: StyleSheet | Array<Object> | number,
 }
 
 const Tile = (props: Props): React$Element<any> => {
-  const { description, image, stories, pages, duration, title, period, onPress, locked, style } = props
+  const { description, image, stories, pages, duration, price, title, period, onPress, locked, availability, style } = props
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View
@@ -35,11 +37,21 @@ const Tile = (props: Props): React$Element<any> => {
           >
             {locked &&
               <View style={styles.overlay}>
-                <Icon
-                  name="locker"
-                  defaultColor={pages ? getPeriodColor(period) : '#FEFEFE'}
-                  size={30}
-                />
+                {(price) &&
+                  <Text style={styles.price}>{price} €</Text>
+                }
+                {pages &&
+                  <Icon
+                    name="locker"
+                    defaultColor={pages ? getPeriodColor(period) : '#FEFEFE'}
+                    size={30}
+                    style={styles.icon}
+                  />
+                }
+                <View style={styles.availabilityContainer}>
+                  <Text style={styles.textLight}>Disponible le </Text>
+                  <Text style={[styles.textLight, styles.textBold]}>{availability}</Text>
+                </View>
               </View>
             }
           </Image>

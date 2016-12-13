@@ -37,8 +37,13 @@ class ThemesContainer extends Component {
                 stories={theme.nbStories}
                 title={theme.name}
                 description={theme.description}
+                price={theme.price}
+                availability={theme.availability}
                 onPress={theme.id <= 1
-                  ? () => Actions.chapters({ theme: theme.name, histories: theme.histories })
+                  ? () => Actions.chapters({
+                    theme: theme.name,
+                    histories: theme.histories,
+                  })
                   : null
                 }
                 locked={theme.locked}
