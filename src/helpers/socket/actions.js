@@ -12,7 +12,7 @@ export const sendSingleImage = (url: Media): Action => ({
 })
 
 export const sendMultipleImages = (urls: Media): Action => ({
-  type: SEND_SINGLE_IMAGE,
+  type: SEND_MULTIPLE_IMAGES,
   payload: urls,
 })
 
