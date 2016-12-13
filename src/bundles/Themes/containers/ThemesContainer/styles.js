@@ -11,14 +11,18 @@ const styles = StyleSheet.create({
     backgroundColor: DEFAULT_BACKGROUND_COLOR,
     paddingHorizontal: rem(1.25),
   },
+  header: {
+    width: vw(100),
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: rem(3.75),
+  },
   wrapper: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-  },
-  title: {
-    marginVertical: rem(3.75),
   },
   tile: {
     marginBottom: rem(3.125),
