@@ -3,8 +3,7 @@
 import React, { Component } from 'react'
 import { Image } from 'react-native'
 import { Actions } from 'react-native-router-flux'
-import { socketEmit, socketStatus } from '@api'
-import io from 'socket.io-client'
+import { socketEmit } from '@helpers/socket'
 import BackButton from '@components/BackButton'
 import Media from '@components/Media'
 import styles from './styles'
@@ -15,19 +14,10 @@ type Props = {}
 class StoryContainer extends Component {
   props: Props
 
-  componentWillMount() {
-    socketStatus()
-  }
-
-  componentWillReceiveProps() {
-    socketStatus()
-  }
-
   render() {
-    const SEND_IMAGE = 'SEND_IMAGE'
-    const image1 = {
-      type: SEND_IMAGE,
-      payload: [
+    const data = {
+      type: 'images',
+      content: [
         'https://s27.postimg.org/wm6361ygz/rhodes_colosse_image11.jpg',
         'https://s29.postimg.org/iubugy9bb/zeus.jpg',
         'https://s27.postimg.org/bskr443v7/slide1_1_1024x475.jpg',
@@ -49,7 +39,7 @@ class StoryContainer extends Component {
           description="7 histoires"
           image="https://s27.postimg.org/wm6361ygz/rhodes_colosse_image11.jpg"
           draggable={false}
-          onPress={() => socketEmit(image1)}
+          onPress={() => socketEmit(data.type, data.content)}
         />
         <Media
           title="7 merveilles du Monde"
