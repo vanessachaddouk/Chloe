@@ -25,7 +25,7 @@ export const API = {
           image: 'https://s27.postimg.org/wm6361ygz/rhodes_colosse_image11.jpg',
           name: 'Le colosse de Rhodes',
           period: 'antiquity',
-          description: 'Entre dans la ville de Rhodes pour y voir la légendaire statue d’Hélios, le dieu grec du Soleil, surplomber le port !',
+          description: 'Le plus ancien traité de paix encore existant est vieux de 3200 ans entre l’Égypte et l’Empire hittite !',
           duration: 10,
           nbPages: 17,
         },
@@ -92,7 +92,7 @@ export const API = {
       histories: [
         {
           id: 0,
-          locked: true,
+          locked: false,
           image: 'https://s23.postimg.org/otellv1ez/mozart_wolfgang_amadeus_527a7a17c1157.jpg',
           name: 'Wolfgang Amadeus Mozart',
           period: 'modernTimes',
@@ -102,7 +102,7 @@ export const API = {
         },
         {
           id: 1,
-          locked: true,
+          locked: false,
           image: 'https://s24.postimg.org/6fczcddut/maxresdefault.jpg',
           name: 'Ludwig Van Beethoven',
           period: 'modernTimes',
@@ -187,12 +187,12 @@ export const API = {
     {
       id: 1,
       period: 'antiquity',
-      content: "My placeholder text, I think, is going to end up being very good with women… Because it’s the longer. TRUUUUMP!",
+      content: 'Le plus ancien traité de paix encore existant est vieux de 3200 ans entre l’Égypte et l’Empire hittite !',
     },
     {
       id: 2,
       period: 'middleAge',
-      content: 'My placeholder text, I think, is going to end up being very good with women… Because it’s the longer. TRUUUUMP!',
+      content: 'Le premier roman de l’histoire a été écrit en l’an 1007 au Japon par une noble japonaise du nom de Murasaki Shikibu !',
     },
     {
       id: 3,

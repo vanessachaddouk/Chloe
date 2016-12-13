@@ -45,7 +45,7 @@ class ChaptersContainer extends Component {
               duration={history.duration}
               title={history.name}
               description={history.description}
-              onPress={history.id === 0
+              onPress={!history.locked
                 ? () => Actions.storyOverview({ title: history.name, image: history.image })
                 : null
               }

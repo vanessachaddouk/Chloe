@@ -5,3 +5,4 @@ export default {
 }
 
 export { API } from './data'
+export { socketEmit, socketStatus } from './socket'
