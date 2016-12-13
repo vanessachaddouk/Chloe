@@ -1,8 +1,8 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { DEFAULT_TEXT_COLOR_LIGHT, NEUTRAL_COLOR_20, NEUTRAL_COLOR_90 } from '@theme/colors'
-import { SFUIDISPLAY_BLACK } from '@theme/fonts'
+import { DEFAULT_TEXT_COLOR, DEFAULT_TEXT_COLOR_LIGHT, NEUTRAL_COLOR_20, NEUTRAL_COLOR_90 } from '@theme/colors'
+import { SFUIDISPLAY_BLACK, SFUIDISPLAY_LIGHT } from '@theme/fonts'
 import { rem } from '@helpers/responsive'
 
 const styles = StyleSheet.create({
@@ -36,6 +36,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 6,
     backgroundColor: NEUTRAL_COLOR_20,
+  },
+  tileTitle: {
+    ...SFUIDISPLAY_LIGHT,
+    width: rem(11.5625),
+    fontSize: rem(0.75),
+    color: DEFAULT_TEXT_COLOR,
+    textAlign: 'center',
+    backgroundColor: 'transparent',
+    marginTop: rem(0.4375),
   },
   title: {
     ...SFUIDISPLAY_BLACK,

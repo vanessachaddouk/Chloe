@@ -41,6 +41,7 @@ class StoryOverviewContainer extends Component {
               bookmarked={item === 0}
               image={image}
               tileNumber={item + 1}
+              tileTitle="Construction de la Trump pyramid"
               draggable={false}
               period="antiquity"
               onPress={Actions.story}

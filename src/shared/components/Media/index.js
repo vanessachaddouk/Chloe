@@ -14,6 +14,7 @@ type Props = {
   onPress?: Function,
   tileNumber?: number,
   tileText?: string,
+  tileTitle?: string,
   style?: StyleSheet | number,
   period?: string,
 }
@@ -55,7 +56,7 @@ class Media extends Component {
   }
 
   render() {
-    const { bookmarked, draggable, image, onPress, tileNumber, tileText, style, period } = this.props
+    const { bookmarked, draggable, image, onPress, tileNumber, tileText, tileTitle, style, period } = this.props
     return draggable
     ? (
        <Animatable.View
@@ -70,6 +71,7 @@ class Media extends Component {
            image={image}
            tileNumber={tileNumber}
            tileText={tileText}
+           tileTitle={tileTitle}
            period={period}
          />
        </Animatable.View>
@@ -82,6 +84,7 @@ class Media extends Component {
              image={image}
              tileNumber={tileNumber}
              tileText={tileText}
+             tileTitle={tileTitle}
              period={period}
            />
            {/* <Button
