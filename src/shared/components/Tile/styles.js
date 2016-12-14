@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
   textLight: {
     ...SFUIDISPLAY_REGULAR,
-    fontSize: rem(0.75),
+    fontSize: rem(0.875),
     color: DEFAULT_TEXT_COLOR_LIGHT,
     letterSpacing: -0.3,
   },
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
   price: {
     ...SFUIDISPLAY_HEAVY,
-    fontSize: rem(2),
+    fontSize: rem(2.5),
     color: DEFAULT_TEXT_COLOR_LIGHT,
     letterSpacing: -0.80,
     marginTop: rem(4.375),

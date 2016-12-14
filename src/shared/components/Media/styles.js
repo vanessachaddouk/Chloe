@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   tileTitle: {
     ...SFUIDISPLAY_LIGHT,
     width: rem(11.5625),
-    fontSize: rem(0.75),
+    fontSize: rem(0.875),
     color: DEFAULT_TEXT_COLOR,
     textAlign: 'center',
     backgroundColor: 'transparent',
