@@ -25,7 +25,7 @@ export const API = {
               title: "L'Égypte antique",
               text: `Nous sommes en l’an 3150 avant Jésus Christ. Une nouvelle civilisation vient de naître dans le monde : La civilisation égyptienne. Les égyptiens sont un peuple d’Afrique du Nord qui vivent autour du Nil, l’un des plus grand fleuves du monde. Le Nil est l’un des rares fleuves à couler du Sud vers le Nord.
  \n\n Les égyptiens sont connus dans le monde entier pour être les inventeurs des hiéroglyphes, l’écriture de la langue égyptien. Ce sont des symboles qui permettent de faciliter le marché et la récolte des impôts par l’Etat. Il existe plus de 500 symboles qui représentent un mot, un son ou une situation.`,
-              image: 'https://s30.postimg.org/ap0q30aqp/egypt.jpg',
+              image: 'https://giant.gfycat.com/TartGraciousChameleon.gif',
               content: [
                 {
                   type: 'image',

@@ -1,11 +1,12 @@
 /* @flow */
 
 import type { Action, Media } from './types'
-
-export const SEND_GIF = 'SEND_GIF'
-export const SEND_SINGLE_IMAGE = 'SEND_SINGLE_IMAGE'
-export const SEND_MULTIPLE_IMAGES = 'SEND_MULTIPLE_IMAGES'
-export const SEND_WORD = 'SEND_WORD'
+import {
+  SEND_GIF,
+  SEND_SINGLE_IMAGE,
+  SEND_MULTIPLE_IMAGES,
+  SEND_WORD,
+} from './types'
 
 export const sendGif = (url: Media): Action => ({
   type: SEND_GIF,

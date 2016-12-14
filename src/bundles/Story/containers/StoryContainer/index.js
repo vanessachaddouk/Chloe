@@ -23,11 +23,11 @@ class StoryContainer extends Component {
 
   componentDidMount = async () => {
     this.props.bookmark(this.props.current)
-    socket.on('connect', () => console.warn('SERVER_CONNECTED'))
-    socket.on('disconnect', () => console.warn('SERVER_DISCONNECTED'))
-    socket.on('lamp_connected', () => console.warn('LAMP_CONNECTED'))
-    socket.on('lamp_disconnected', () => console.warn('LAMP_DISCONNECTED'))
-    if (socket.connected) console.warn('SERVER_ALREADY_CONNECTED')
+    socket.on('connect', () => console.log('SERVER_CONNECTED'))
+    socket.on('disconnect', () => console.log('SERVER_DISCONNECTED'))
+    socket.on('lamp_connected', () => console.log('LAMP_CONNECTED'))
+    socket.on('lamp_disconnected', () => console.log('LAMP_DISCONNECTED'))
+    if (socket.connected) console.log('SERVER_ALREADY_CONNECTED')
   }
 
   onMomentumScrollEnd = (e, state) => {
