@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 import { Image, View } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import { getPeriodColor } from '@helpers/periods'
+import { socket } from '@helpers/socket'
 import Swiper from 'react-native-swiper'
 import Button from '@components/Button'
 import Page from '@components/Page'
@@ -20,8 +21,13 @@ type Props = {
 class StoryContainer extends Component {
   props: Props
 
-  componentDidMount() {
+  componentDidMount = async () => {
     this.props.bookmark(this.props.current)
+    socket.on('connect', () => console.warn('SERVER_CONNECTED'))
+    socket.on('disconnect', () => console.warn('SERVER_DISCONNECTED'))
+    socket.on('lamp_connected', () => console.warn('LAMP_CONNECTED'))
+    socket.on('lamp_disconnected', () => console.warn('LAMP_DISCONNECTED'))
+    if (socket.connected) console.warn('SERVER_ALREADY_CONNECTED')
   }
 
   onMomentumScrollEnd = (e, state) => {
@@ -34,7 +40,6 @@ class StoryContainer extends Component {
 
   render() {
     const { current, pages, period } = this.props
-    console.log(this.props)
     return (
       <Image
         resizeMode="cover"
