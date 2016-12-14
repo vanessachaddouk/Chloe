@@ -10,17 +10,17 @@ import styles from './styles'
 import connect from './connect'
 
 type Props = {
-  image: string,
   title: string,
   period: string,
   pages: Array<Object>,
+  savedBookmark: Object,
 }
 
 class StoryOverviewContainer extends Component {
   props: Props
 
   render() {
-    const { image, title, period, pages } = this.props
+    const { title, period, pages, savedBookmark } = this.props
     return (
       <Image
         resizeMode="cover"
@@ -40,13 +40,20 @@ class StoryOverviewContainer extends Component {
           {pages.map((page, index) => (
             <Media
               key={index}
-              bookmarked={page.id === 1}
+              bookmarked={(savedBookmark.title === page.title && savedBookmark.pageId === page.id)}
               image={page.image}
               tileNumber={page.id}
               tileTitle={page.title}
               draggable={false}
               period={period}
-              onPress={() => Actions.story({ pages, period })}
+              onPress={() => Actions.story({
+                pages,
+                period,
+                current: {
+                  title: page.title,
+                  pageId: page.id,
+                },
+              })}
               style={styles.mediaTile}
             />
           ))}

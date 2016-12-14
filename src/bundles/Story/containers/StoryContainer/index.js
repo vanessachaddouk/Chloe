@@ -11,6 +11,8 @@ import styles from './styles'
 import connect from './connect'
 
 type Props = {
+  bookmark: Function,
+  current: Object,
   pages: Array<Object>,
   period: string,
 }
@@ -18,8 +20,21 @@ type Props = {
 class StoryContainer extends Component {
   props: Props
 
+  componentDidMount() {
+    this.props.bookmark(this.props.current)
+  }
+
+  onMomentumScrollEnd = (e, state) => {
+    const current = {
+      title: this.props.pages[state.index].title,
+      pageId: this.props.pages[state.index].id,
+    }
+    this.props.bookmark(current)
+  }
+
   render() {
-    const { pages, period } = this.props
+    const { current, pages, period } = this.props
+    console.log(this.props)
     return (
       <Image
         resizeMode="cover"
@@ -33,10 +48,12 @@ class StoryContainer extends Component {
           />
         </View>
         <Swiper
+          index={current.pageId - 1}
           loop={false}
           style={styles.swiper}
           showsButtons={true}
           showsPagination={false}
+          onMomentumScrollEnd={this.onMomentumScrollEnd}
           prevButton={<Button title="prev" color={getPeriodColor(period)} style={styles.prevButton} />}
           nextButton={<Button title="next" color={getPeriodColor(period)} style={styles.nextButton} />}
         >

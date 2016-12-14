@@ -23,7 +23,8 @@ export const API = {
             {
               id: 1,
               title: "L'Égypte antique",
-              text: `I was going to say something extremely rough to Lorem Ipsum, to its family, and I said to myself, I can't do it. I just can't do it. It's inappropriate. It's not nice. \n\n I think the only card she has is the Lorem card. Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. I’m the best thing that ever happened to placeholder text.`,
+              text: `Nous sommes en l’an 3150 avant Jésus Christ. Une nouvelle civilisation vient de naître dans le monde : La civilisation égyptienne. Les égyptiens sont un peuple d’Afrique du Nord qui vivent autour du Nil, l’un des plus grand fleuves du monde. Le Nil est l’un des rares fleuves à couler du Sud vers le Nord.
+ \n\n Les égyptiens sont connus dans le monde entier pour être les inventeurs des hiéroglyphes, l’écriture de la langue égyptien. Ce sont des symboles qui permettent de faciliter le marché et la récolte des impôts par l’Etat. Il existe plus de 500 symboles qui représentent un mot, un son ou une situation.`,
               image: 'https://s30.postimg.org/ap0q30aqp/egypt.jpg',
               content: [
                 {
