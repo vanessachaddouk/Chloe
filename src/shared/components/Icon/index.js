@@ -43,6 +43,9 @@ const Icon = (props: Props): React$Element<any> | null => {
     case 'modernTimes':
       icon = require('./ModernTimes').default
       break
+    case 'navigation':
+      icon = require('./NavButton').default
+      break
     case 'preHistory':
       icon = require('./PreHistory').default
       break

@@ -1,8 +1,6 @@
 /* @flow */
 
 import { StyleSheet } from 'react-native'
-import { SFUIDISPLAY_BOLD } from '@theme/fonts'
-import { rem } from '@helpers/responsive'
 
 const styles = StyleSheet.create({
   container: {
@@ -10,25 +8,15 @@ const styles = StyleSheet.create({
   },
   swiper: {
   },
-  slide1: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+  button: {
+    position: 'absolute',
+    zIndex: 10,
   },
-  slide2: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+  nextButton: {
+    paddingLeft: 2,
   },
-  slide3: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    ...SFUIDISPLAY_BOLD,
-    color: 'black',
-    fontSize: rem(1.125),
+  prevButton: {
+    paddingRight: 2,
   },
 })
 

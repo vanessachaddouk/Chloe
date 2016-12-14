@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     height: rem(11.5625),
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.3)',
+    backgroundColor: 'rgba(0,0,0,0.5)',
   },
   infosContainer: {
     width: rem(17.8125),

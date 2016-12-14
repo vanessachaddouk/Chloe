@@ -15,6 +15,14 @@ const styles = StyleSheet.create({
     marginTop: rem(2.5),
     backgroundColor: 'transparent',
   },
+  button: {
+    width: rem(2.5),
+    height: rem(2.5),
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 2,
+    borderRadius: 40,
+  },
 })
 
 export default styles

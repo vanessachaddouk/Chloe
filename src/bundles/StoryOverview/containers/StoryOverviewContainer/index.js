@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 import { Image, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux'
-import BackButton from '@components/BackButton'
+import Button from '@components/Button'
 import Media from '@components/Media'
 import Title from '@components/Title'
 import styles from './styles'
@@ -12,20 +12,22 @@ import connect from './connect'
 type Props = {
   image: string,
   title: string,
+  period: string,
+  pages: Array<Object>,
 }
 
 class StoryOverviewContainer extends Component {
   props: Props
 
   render() {
-    const { image, title } = this.props
+    const { image, title, period, pages } = this.props
     return (
       <Image
         resizeMode="cover"
         source={require('../../../../shared/theme/assets/pattern.png')}
         style={styles.container}
       >
-        <BackButton
+        <Button
           onPress={() => Actions.themes({ type: 'back' })}
           title="Retour"
         />
@@ -35,16 +37,16 @@ class StoryOverviewContainer extends Component {
           showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.scrollview}
         >
-          {Array.from({ length: 25 }, (a, index) => index).map((item) => (
+          {pages.map((page, index) => (
             <Media
-              key={item}
-              bookmarked={item === 0}
-              image={image}
-              tileNumber={item + 1}
-              tileTitle="Construction du Trump édifice"
+              key={index}
+              bookmarked={page.id === 1}
+              image={page.image}
+              tileNumber={page.id}
+              tileTitle={page.title}
               draggable={false}
-              period="antiquity"
-              onPress={Actions.story}
+              period={period}
+              onPress={() => Actions.story({ pages, period })}
               style={styles.mediaTile}
             />
           ))}

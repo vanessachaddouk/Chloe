@@ -19,6 +19,56 @@ export const API = {
           duration: 20,
           nbPages: 35,
           availability: '24/12',
+          pages: [
+            {
+              id: 1,
+              title: "L'Égypte antique",
+              text: `I was going to say something extremely rough to Lorem Ipsum, to its family, and I said to myself, I can't do it. I just can't do it. It's inappropriate. It's not nice. \n\n I think the only card she has is the Lorem card. Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. I’m the best thing that ever happened to placeholder text.`,
+              image: 'https://s30.postimg.org/ap0q30aqp/egypt.jpg',
+              content: [
+                {
+                  type: 'image',
+                  data: '',
+                },
+                {
+                  type: 'word',
+                  data: '',
+                },
+              ],
+            },
+            {
+              id: 2,
+              title: 'La mythlogie égyptienne',
+              text: `I was going to say something extremely rough to Lorem Ipsum, to its family, and I said to myself, I can't do it. I just can't do it. It's inappropriate. It's not nice. \n\n I think the only card she has is the Lorem card. Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. I’m the best thing that ever happened to placeholder text.`,
+              image: 'https://s29.postimg.org/fmqlwai8n/gods.jpg',
+              content: [
+                {
+                  type: 'image',
+                  data: '',
+                },
+                {
+                  type: 'word',
+                  data: '',
+                },
+              ],
+            },
+            {
+              id: 3,
+              title: 'Les pharaons',
+              text: `I was going to say something extremely rough to Lorem Ipsum, to its family, and I said to myself, I can't do it. I just can't do it. It's inappropriate. It's not nice. \n\n I think the only card she has is the Lorem card. Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. I’m the best thing that ever happened to placeholder text.`,
+              image: 'https://s30.postimg.org/9xhuwe1nl/pharaons.jpg',
+              content: [
+                {
+                  type: 'image',
+                  data: '',
+                },
+                {
+                  type: 'word',
+                  data: '',
+                },
+              ],
+            },
+          ],
         },
         {
           id: 1,
