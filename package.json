@@ -26,6 +26,7 @@
     "react-native-animatable": "^1.1.0",
     "react-native-router-flux": "^3.35.0",
     "react-native-svg": "^4.4.0",
+    "react-native-swiper": "^1.5.4",
     "react-redux": "^4.4.5",
     "recompose": "^0.20.2",
     "redux": "^3.5.2",

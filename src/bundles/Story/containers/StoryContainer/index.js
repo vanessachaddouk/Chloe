@@ -1,9 +1,10 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { Image } from 'react-native'
+import { Image, Text, View } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import { socketEmit } from '@helpers/socket'
+import Swiper from 'react-native-swiper'
 import BackButton from '@components/BackButton'
 import Media from '@components/Media'
 import styles from './styles'
@@ -34,31 +35,21 @@ class StoryContainer extends Component {
           onPress={() => Actions.storyOverview({ type: 'back' })}
           title="Retour"
         />
-        <Media
-          title="7 merveilles du Monde"
-          description="7 histoires"
-          image="https://s27.postimg.org/wm6361ygz/rhodes_colosse_image11.jpg"
-          draggable={false}
-          onPress={() => socketEmit(data.type, data.content)}
-        />
-        <Media
-          title="7 merveilles du Monde"
-          description="7 histoires"
-          image="https://s29.postimg.org/iubugy9bb/zeus.jpg"
-          draggable={false}
-          onPress={() => console.warn('Touch!')}
-        />
-        <Media
-          title="7 merveilles du Monde"
-          description="7 histoires"
-          tileText="Trumpipsum"
-          draggable={false}
-          onPress={() => console.warn('Touch!')}
-        />
-        <BackButton
-          onPress={Actions.themes}
-          title="Home"
-        />
+        <Swiper
+          loop={false}
+          style={styles.swiper}
+          showButtons={true}
+        >
+          <View style={styles.slide1}>
+            <Text style={styles.text}>Hello Swiper</Text>
+          </View>
+          <View style={styles.slide2}>
+            <Text style={styles.text}>Beautiful</Text>
+          </View>
+          <View style={styles.slide3}>
+            <Text style={styles.text}>And simple</Text>
+          </View>
+        </Swiper>
       </Image>
     )
   }
