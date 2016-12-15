@@ -1,39 +1,42 @@
 /* @flow */
 
 import React from 'react'
-import { Image, Text, View } from 'react-native'
-import { getPeriodColor } from '@helpers/periods'
-import styles from './styles'
+import SimpleMode from './SimpleMode'
+import ChloeMode from './ChloeMode'
 
 type Props = {
+  chloeMode: boolean,
+  content: Array<Object>,
   image: string,
   title: string,
   text: string,
   period: string,
   pageStatus: Array<number>,
+  pageMode: 'light' | 'dark',
 }
 
 const Page = (props: Props): React$Element<any> => {
-  const { image, title, text, period, pageStatus } = props
-  return (
-    <View style={styles.container}>
-      <View style={styles.wrapper}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.content}>{text}</Text>
-        <View style={styles.footer}>
-          <Text style={styles.text}>
-            <Text style={{ color: getPeriodColor(period) }}>{pageStatus[0]}</Text>
-            <Text> / {pageStatus[1]}</Text>
-          </Text>
-        </View>
-      </View>
-      <Image
-        resizeMode="cover"
-        source={{ uri: image }}
-        style={styles.image}
+  const { chloeMode, content, image, title, text, period, pageMode, pageStatus } = props
+  return !chloeMode
+    ? (
+        <SimpleMode
+          title={title}
+          text={text}
+          image={image}
+          period={period}
+          pageStatus={pageStatus}
+          pageMode={pageMode}
+        />
+      )
+    : (
+      <ChloeMode
+        title={title}
+        text={text}
+        period={period}
+        content={content}
+        pageStatus={pageStatus}
       />
-    </View>
-  )
+    )
 }
 
 export default Page

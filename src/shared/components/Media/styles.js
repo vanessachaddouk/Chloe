@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     width: rem(11.5625),
     height: rem(8.125),
     borderRadius: 6,
+    backgroundColor: 'rgba(0,0,0,0.25)',
   },
   overlay: {
     width: rem(11.5625),

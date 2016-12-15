@@ -24,3 +24,19 @@ export const socketEmit = (type: SocketType, media: Media) => {
     default:
   }
 }
+
+export const socketState = (state: string): Object => {
+  switch (state) {
+    case 'SERVER_CONNECTED':
+      return { isServerConnected: true }
+    case 'SERVER_DISCONNECTED':
+      return { isServerConnected: false }
+    case 'LAMP_CONNECTED':
+      return { isLampConnected: true }
+    case 'LAMP_DISCONNECTED':
+      return { isLampConnected: false }
+    case 'SERVER_ALREADY_CONNECTED':
+      return { isServerConnected: true }
+    default:
+  }
+}
