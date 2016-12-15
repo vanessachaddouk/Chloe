@@ -64,6 +64,7 @@ class StoryContainer extends Component {
   }
 
   onDeactivatedChloeMode = async () => {
+    await socketEmit('remove')
     await this.setState({
       chloeMode: false,
       isDeconnectButtonDisplayed: false,
