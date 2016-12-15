@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     paddingRight: 2,
   },
   chloeModePosition: {
-    transform: [{ translateY: rem(3.75) }],
+    transform: [{ translateY: rem(4.375) }],
   },
 })
 

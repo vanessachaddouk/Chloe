@@ -40,6 +40,9 @@ const Icon = (props: Props): React$Element<any> | null => {
     case 'locker':
       icon = require('./Locker').default
       break
+    case 'logo':
+      icon = require('./Logo').default
+      break
     case 'middleAge':
       icon = require('./MiddleAge').default
       break

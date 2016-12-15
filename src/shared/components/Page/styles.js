@@ -28,6 +28,8 @@ const styles = StyleSheet.create({
   },
   wrapperDark: {
     paddingTop: rem(10),
+  },
+  wrapperDarkSimple: {
     backgroundColor: NEUTRAL_COLOR_80,
   },
   projectorContentWrapper: {
@@ -98,7 +100,7 @@ const styles = StyleSheet.create({
     ...SFUIDISPLAY_BOLD,
     fontSize: rem(1.25),
     color: 'rgba(255,255,255,0.20)',
-    marginBottom: rem(1.25),
+    marginBottom: rem(1.6875),
   },
 })
 

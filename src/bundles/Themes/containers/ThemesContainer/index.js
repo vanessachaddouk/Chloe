@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { Image, ScrollView, View } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import { API } from '@api'
-import Title from '@components/Title'
+import Icon from '@components/Icon'
 import Tile from '@components/Tile'
 import styles from './styles'
 import connect from './connect'
@@ -26,7 +26,7 @@ class ThemesContainer extends Component {
           showsVerticalScrollIndicator={false}
         >
           <View style={styles.header}>
-            <Title size="big">Chloé</Title>
+            <Icon name="logo" size={110} />
           </View>
           <View style={styles.wrapper}>
             {API.themes.map((theme, index) => (

@@ -23,7 +23,7 @@ const SimpleMode = (props: Props): React$Element<any> => {
         animated={true}
         barStyle={darkMode ? 'light-content' : 'dark-content'}
       />
-      <View style={[styles.wrapper, darkMode ? styles.wrapperDark : null]}>
+      <View style={[styles.wrapper, darkMode ? styles.wrapperDarkSimple : null]}>
         <Text style={styles.title}>{title}</Text>
         <Text style={[styles.content, darkMode ? styles.contentDark : null]}>{text}</Text>
         <View style={styles.footer}>

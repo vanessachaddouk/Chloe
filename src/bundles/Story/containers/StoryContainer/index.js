@@ -33,22 +33,23 @@ class StoryContainer extends Component {
   props: Props
   state: State = {
     alert: null,
-    chloeMode: true,
+    chloeMode: false,
     isLampConnected: false,
-    isDeconnectButtonDisplayed: true,
+    isDeconnectButtonDisplayed: false,
     isServerConnected: false,
     deconnectLamp: false,
     pageMode: 'light',
   }
 
   componentDidMount = async () => {
-    console.disableYellowBox = true
     this.props.bookmark(this.props.current)
+    // console.disableYellowBox = true
     socket.on('connect', () => this.onSetSocketState('SERVER_CONNECTED'))
     socket.on('disconnect', () => this.onSetSocketState('SERVER_DISCONNECTED'))
     socket.on('lamp_connected', () => this.onSetSocketState('LAMP_CONNECTED'))
     socket.on('lamp_disconnected', () => this.onSetSocketState('LAMP_DISCONNECTED'))
     if (socket.connected) this.onSetSocketState('SERVER_ALREADY_CONNECTED')
+    this.shouldActivateChloeMode()
   }
 
   onChangePageMode() {
@@ -71,23 +72,34 @@ class StoryContainer extends Component {
       title: this.props.pages[state.index].title,
       pageId: this.props.pages[state.index].id,
     }
-    this.props.bookmark(current)
+    if (current.pageId < this.props.pages.length) {
+      this.props.bookmark(current)
+    } else {
+      this.props.bookmark({
+        title: '',
+        pageId: 0,
+      })
+    }
   }
 
   onSetSocketState = async (newSocketState: string) => {
     await this.setState(socketState(newSocketState))
-    if (this.state.isLampConnected && this.state.isServerConnected && !this.state.deconnectLamp) {
-      await this.setState({
-        chloeMode: true,
-        isDeconnectButtonDisplayed: true,
-        deconnectLamp: false,
-      })
-    }
+    await this.shouldActivateChloeMode()
     if (newSocketState === 'LAMP_DISCONNECTED') {
       this.setState({ alert: 'lamp' })
     }
     if (newSocketState === 'SERVER_DISCONNECTED') {
       this.setState({ alert: 'server' })
+    }
+  }
+
+  shouldActivateChloeMode() {
+    if (this.state.isLampConnected && this.state.isServerConnected && !this.state.deconnectLamp) {
+      this.setState({
+        chloeMode: true,
+        isDeconnectButtonDisplayed: true,
+        deconnectLamp: false,
+      })
     }
   }
 
@@ -125,6 +137,7 @@ class StoryContainer extends Component {
           loop={false}
           showsButtons={true}
           showsPagination={false}
+          onMomentumScrollEnd={this.onMomentumScrollEnd}
           prevButton={<Button title="prev" color={getPeriodColor(period)} style={[styles.prevButton, this.state.chloeMode ? styles.chloeModePosition : null]} />}
           nextButton={<Button title="next" color={getPeriodColor(period)} style={[styles.nextButton, this.state.chloeMode ? styles.chloeModePosition : null]} />}
         >

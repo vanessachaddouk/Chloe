@@ -16,15 +16,14 @@ export const API = {
           name: 'La pyramide de Khéops',
           period: 'antiquity',
           description: 'Elle fait partie des constructions les plus massives du monde et est la seule merveille à toujours être debout !',
-          duration: 20,
-          nbPages: 35,
+          duration: 7,
+          nbPages: 6,
           availability: '24/12',
           pages: [
             {
               id: 1,
               title: "L'Égypte antique",
-              text: `Nous sommes en l’an 3150 avant Jésus Christ. Une nouvelle civilisation vient de naître dans le monde : La civilisation égyptienne. Les égyptiens sont un peuple d’Afrique du Nord qui vivent autour du Nil, l’un des plus grand fleuves du monde. Le Nil est l’un des rares fleuves à couler du Sud vers le Nord.
- \n Les égyptiens sont connus dans le monde entier pour être les inventeurs des hiéroglyphes, l’écriture de la langue égyptien. Ce sont des symboles qui permettent de faciliter le marché et la récolte des impôts par l’Etat. Il existe plus de 500 symboles qui représentent un mot, un son ou une situation.`,
+              text: `Nous sommes en l’an 3150 avant Jésus Christ. Une nouvelle civilisation vient de naître dans le monde : La civilisation égyptienne. Les égyptiens sont un peuple d’Afrique du Nord qui vivent autour du Nil, l’un des plus grand fleuves du monde. Le Nil est l’un des rares fleuves à couler du Sud vers le Nord. \n\nLes égyptiens sont connus dans le monde entier pour être les inventeurs des hiéroglyphes, l’écriture de la langue égyptien. Ce sont des symboles qui permettent de faciliter le marché et la récolte des impôts par l’Etat. Il existe plus de 500 symboles qui représentent un mot, un son ou une situation.`,
               image: 'https://giant.gfycat.com/FilthyFelineBorzoi.gif',
               content: [
                 {
@@ -60,7 +59,7 @@ export const API = {
             {
               id: 2,
               title: 'La mythlogie égyptienne',
-              text: `I was going to say something extremely rough to Lorem Ipsum, to its family, and I said to myself, I can't do it. I just can't do it. It's inappropriate. It's not nice. \n\n I think the only card she has is the Lorem card. Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. I’m the best thing that ever happened to placeholder text.`,
+              text: "Il faut aussi savoir que la religion est extrêmement importante chez les égyptiens. C’est une religion polythéiste, elle possède donc de nombreux dieux. Les plus importants sont Ra, Anubis, Horus, Isis ou encore Seth. Les égyptiens croient en l’immortalité de l’âme et vont donc créer de nombreux temples à la gloire des différents dieux ainsi que des pyramides, symboles de l’élévation de l’âme.",
               image: 'https://giant.gfycat.com/WateryArtisticHamadryad.gif',
               content: [
                 {
@@ -74,8 +73,30 @@ export const API = {
                   id: 1,
                   type: 'word',
                   paragraph: 1,
-                  content: 'Hiéroglyphe',
-                  data: 'Hiéroglyphe',
+                  content: 'Horus',
+                  data: 'Horus',
+                },
+              ],
+            },
+            {
+              id: 3,
+              title: 'Les pharaons',
+              text: `La personne qui dirige l’ensemble des égyptiens est un Pharaon. On dit qu’il tire son pouvoir directement des dieux et qu’il est l’un de leurs descendant. Le pharaon est le symbole du pouvoir et de l’unité de la population. Parmis les plus connus nous avons : Imhotep, Toutânkhamon ou encore Ramsès II. Au total, les pharaons ont fait construire 90 pyramides en Egypte. \n\n C’est en l’an 2550 avant Jésus Christ, en Egypte, que le nouveau pharaon Khéops entre au pouvoir succédant à son père Snéfrou. C’est dès son entrée au pouvoir qu’il décide de lancer la construction de sa Pyramide. La Pyramide de Khéops reste encore aujourd’hui l’une des construction les plus imposante du monde.`,
+              image: 'https://giant.gfycat.com/JoyousAnyFlatcoatretriever.gif',
+              content: [
+                {
+                  id: 0,
+                  type: 'GIF',
+                  paragraph: 1,
+                  content: 'https://giant.gfycat.com/FilthyFelineBorzoi.gif',
+                  data: 'https://giant.gfycat.com/FilthyFelineBorzoi.gif',
+                },
+                {
+                  id: 1,
+                  type: 'word',
+                  paragraph: 1,
+                  content: 'Toutenkarthon',
+                  data: 'Toutenkarthon',
                 },
                 {
                   id: 2,
@@ -94,10 +115,10 @@ export const API = {
               ],
             },
             {
-              id: 3,
-              title: 'Les pharaons',
-              text: `I was going to say something extremely rough to Lorem Ipsum, to its family, and I said to myself, I can't do it. I just can't do it. It's inappropriate. It's not nice. \n\n I think the only card she has is the Lorem card. Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. I’m the best thing that ever happened to placeholder text.`,
-              image: 'https://giant.gfycat.com/JoyousAnyFlatcoatretriever.gif',
+              id: 4,
+              title: 'La pyrapide de Khéops',
+              text: `La Pyramide Khéops possède quatre faces. C’est donc un carré qui mesure 230 mètres de chaque côté et dont chaque face est un triangle. La hauteur de la pyramide est de 147 mètres, ou plutôt 135 mètres depuis que son sommet c’est effondré et qu’elle a perdu 12 mètres de hauteur. Les détails de sa construction ont toujours été mystérieuse. \n\nLes bâtisseurs égyptiens ont réalisé la pyramide de Khéops en seulement 20 ans. Ils ont utilisé plus de 2,5 millions de blocs de granite. Chaque bloc pèse 2 tonnes soit le poids d’un jeune éléphant. Pour la construction, les 20 000 bâtisseurs étaient munis de toutes sortes d’outils comme des pieux, des poids ou encore des pelles.`,
+              image: 'https://giant.gfycat.com/WateryArtisticHamadryad.gif',
               content: [
                 {
                   id: 0,
@@ -108,17 +129,75 @@ export const API = {
                 },
                 {
                   id: 1,
-                  type: 'word',
+                  type: 'GIF',
                   paragraph: 1,
-                  content: 'Hiéroglyphe',
-                  data: 'Hiéroglyphe',
+                  content: 'https://giant.gfycat.com/WateryArtisticHamadryad.gif',
+                  data: 'https://giant.gfycat.com/WateryArtisticHamadryad.gif',
                 },
                 {
                   id: 2,
+                  type: 'word',
+                  paragraph: 2,
+                  content: 'Pyramide',
+                  data: 'Pyramide',
+                },
+                {
+                  id: 3,
                   type: 'GIF',
                   paragraph: 2,
-                  content: 'https://giant.gfycat.com/WateryArtisticHamadryad.gif',
-                  data: 'https://giant.gfycat.com/WateryArtisticHamadryad.gif',
+                  content: 'https://giant.gfycat.com/JoyousAnyFlatcoatretriever.gif',
+                  data: 'https://giant.gfycat.com/JoyousAnyFlatcoatretriever.gif',
+                },
+              ],
+            },
+            {
+              id: 5,
+              title: 'Le rôle',
+              text: "Durant l'Antiquité, les pyramides d'Égypte ont été construites pour servir de tombeaux. Elles accueillent les corps momifiés des pharaons et de leurs épouses. La forme du monument symbolise un rayon de soleil. Elles devaient permettre aux défunts de rejoindre plus facilement le dieu du soleil, Râ. Enfin, elles garantissent un repos éternel en empêchant des intrus d’entrer.",
+              image: 'https://giant.gfycat.com/JoyousAnyFlatcoatretriever.gif',
+              content: [
+                {
+                  id: 0,
+                  type: 'word',
+                  paragraph: 1,
+                  content: 'Râ',
+                  data: 'Râ',
+                },
+                {
+                  id: 1,
+                  type: 'GIF',
+                  paragraph: 1,
+                  content: 'https://giant.gfycat.com/FilthyFelineBorzoi.gif',
+                  data: 'https://giant.gfycat.com/FilthyFelineBorzoi.gif',
+                },
+              ],
+            },
+            {
+              id: 6,
+              title: "La pyramide aujourd'hui",
+              text: 'Bien qu’elle soit toujours debout, la pyramide de Khéops a perdu plusieurs blocs à son sommet mais également son revêtement en calcaire qui lui donnait une couleure plus blanche. La pyramide est le plus vieux monument du monde et a été ajouté au classement des 7 Merveilles du monde antique et est la seule à être encore debout. Elle fait maintenant parti des 7 nouvelles Merveilles du monde au côté du Colisée de Rome ou de la Grande muraille de Chine.',
+              image: 'https://giant.gfycat.com/WateryArtisticHamadryad.gif',
+              content: [
+                {
+                  id: 0,
+                  type: 'word',
+                  paragraph: 1,
+                  content: 'Colissée',
+                  data: 'Colissée',
+                },
+                {
+                  id: 1,
+                  type: 'GIF',
+                  paragraph: 1,
+                  content: 'https://giant.gfycat.com/FilthyFelineBorzoi.gif',
+                  data: 'https://giant.gfycat.com/FilthyFelineBorzoi.gif',
+                },
+                {
+                  id: 2,
+                  type: 'word',
+                  paragraph: 2,
+                  content: 'La Muraille de Chine',
+                  data: 'La Muraille de Chine',
                 },
                 {
                   id: 3,
@@ -138,7 +217,7 @@ export const API = {
           name: 'Le colosse de Rhodes',
           period: 'antiquity',
           description: 'Le plus ancien traité de paix encore existant est vieux de 3200 ans entre l’Égypte et l’Empire hittite !',
-          duration: 10,
+          duration: 15,
           nbPages: 17,
           availability: '24/12',
         },
@@ -160,7 +239,7 @@ export const API = {
           name: 'Les jardins suspendus',
           period: 'antiquity',
           description: "Découvre l’un des plus beau lieu du monde Antique. Merveille d'architecture, de technologie et de végétation !",
-          duration: 5,
+          duration: 10,
           nbPages: 12,
           availability: '24/12',
         },
@@ -182,7 +261,7 @@ export const API = {
           name: 'Le statue de Zeus',
           period: 'antiquity',
           description: 'Part à la découverte de la gigantesque statue de Zeus à Olympie, la cité des Dieux !',
-          duration: 3,
+          duration: 8,
           nbPages: 9,
           availability: '24/12',
         },
