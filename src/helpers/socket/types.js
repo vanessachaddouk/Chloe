@@ -5,9 +5,9 @@ export type Action = {
   payload: string | Array<Object>,
 }
 
-export type SocketType = 'GIF' | 'image' | 'images' | 'word'
+export type SocketType = 'connection' | 'GIF' | 'image' | 'images' | 'remove' | 'word'
 
-export type Media = string | Array<Object>
+export type Media = string | Array<Object> | undefined
 
 export const LAMP_CONNECTED = 'LAMP_CONNECTED'
 export const LAMP_DISCONNECTED = 'LAMP_DISCONNECTED'

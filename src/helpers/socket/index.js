@@ -9,6 +9,12 @@ export const socket = io('http://188.166.32.147:3200', {
 
 export const socketEmit = (type: SocketType, media: Media) => {
   switch (type) {
+    case 'connection':
+      socket.emit('anyone_connected')
+      break
+    case 'remove':
+      socket.emit('dispatch', { type: 'REMOVE_CONTENT' })
+      break
     case 'image':
       socket.emit('dispatch', sendSingleImage(media))
       break

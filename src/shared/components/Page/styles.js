@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   },
   wrapperDark: {
     paddingTop: rem(10),
+    backgroundColor: NEUTRAL_COLOR_80,
   },
   wrapperDarkSimple: {
     backgroundColor: NEUTRAL_COLOR_80,
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
     width: rem(18.375),
     height: rem(8.25),
     borderRadius: 6,
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(0,0,0,0.25)',
   },
   chloeZoneText: {
     width: rem(18.375),

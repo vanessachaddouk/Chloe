@@ -1,7 +1,7 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { Image, ScrollView, View } from 'react-native'
+import { Image, ScrollView, StatusBar, View } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import { API } from '@api'
 import Icon from '@components/Icon'
@@ -21,6 +21,10 @@ class ThemesContainer extends Component {
         source={require('../../../../shared/theme/assets/pattern.png')}
         style={styles.container}
       >
+        <StatusBar
+          animated={true}
+          barStyle="dark-content"
+        />
         <ScrollView
           bounces={false}
           showsVerticalScrollIndicator={false}

@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 import { Image, StatusBar, Text, TouchableWithoutFeedback, View } from 'react-native'
 import { getPeriodColor } from '@helpers/periods'
-import { socketEmit } from '@helpers/socket'
+import { socketEmit } from '@helpers/socket'
 import Media from '@components/Media'
 import styles from './styles'
 
@@ -25,6 +25,10 @@ class ChloeMode extends Component {
     currentlyProjected: {},
   }
 
+  componentWillReceiveProps() {
+    this.setState({ currentlyProjected: {} })
+  }
+
   onSendMedia(currentlyProjected: Object) {
     if (currentlyProjected === this.state.currentlyProjected) {
       this.onRemoveMedia()
@@ -36,6 +40,7 @@ class ChloeMode extends Component {
 
   onRemoveMedia() {
     this.setState({ currentlyProjected: {} })
+    socketEmit('remove')
   }
 
   render() {

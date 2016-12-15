@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { Image, View } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import { getPeriodColor } from '@helpers/periods'
-import { socket, socketState } from '@helpers/socket'
+import { socket, socketEmit, socketState } from '@helpers/socket'
 import Swiper from 'react-native-swiper'
 import Alert from '@components/Alert'
 import Button from '@components/Button'
@@ -27,6 +27,7 @@ type State = {
   isDeconnectButtonDisplayed: boolean,
   deconnectLamp: boolean,
   pageMode: 'light' | 'dark',
+  removeCurrent: boolean,
 }
 
 class StoryContainer extends Component {
@@ -41,15 +42,19 @@ class StoryContainer extends Component {
     pageMode: 'light',
   }
 
-  componentDidMount = async () => {
+  componentWillMount = async () => {
     this.props.bookmark(this.props.current)
-    // console.disableYellowBox = true
+    console.disableYellowBox = true
     socket.on('connect', () => this.onSetSocketState('SERVER_CONNECTED'))
     socket.on('disconnect', () => this.onSetSocketState('SERVER_DISCONNECTED'))
-    socket.on('lamp_connected', () => this.onSetSocketState('LAMP_CONNECTED'))
     socket.on('lamp_disconnected', () => this.onSetSocketState('LAMP_DISCONNECTED'))
     if (socket.connected) this.onSetSocketState('SERVER_ALREADY_CONNECTED')
     this.shouldActivateChloeMode()
+  }
+
+  componentDidMount() {
+    socket.on('lamp_connected', () => this.onSetSocketState('LAMP_CONNECTED'))
+    socket.on('lamp_already_connected', () => this.onSetSocketState('LAMP_ALREADY_CONNECTED'))
   }
 
   onChangePageMode() {
@@ -58,16 +63,20 @@ class StoryContainer extends Component {
     : this.setState({ pageMode: 'light' })
   }
 
-  onDeactivatedChloeMode() {
-    this.setState({ deconnectLamp: true })
-    console.warn('DECONNECTED TO LAMP')
+  onDeactivatedChloeMode = async () => {
+    await this.setState({
+      chloeMode: false,
+      isDeconnectButtonDisplayed: false,
+      deconnectLamp: true,
+      alert: null,
+    })
   }
 
   onDismissAlert() {
     this.setState({ alert: null })
   }
 
-  onMomentumScrollEnd = (e, state) => {
+  onMomentumScrollEnd = async (e, state) => {
     const current = {
       title: this.props.pages[state.index].title,
       pageId: this.props.pages[state.index].id,
@@ -80,16 +89,29 @@ class StoryContainer extends Component {
         pageId: 0,
       })
     }
+    socketEmit('remove')
   }
 
   onSetSocketState = async (newSocketState: string) => {
     await this.setState(socketState(newSocketState))
     await this.shouldActivateChloeMode()
-    if (newSocketState === 'LAMP_DISCONNECTED') {
-      this.setState({ alert: 'lamp' })
-    }
-    if (newSocketState === 'SERVER_DISCONNECTED') {
-      this.setState({ alert: 'server' })
+    switch (newSocketState) {
+      case 'SERVER_CONNECTED':
+      case 'SERVER_ALREADY_CONNECTED':
+        await socketEmit('connection')
+        break
+      case 'LAMP_ALREADY_CONNECTED':
+      case 'LAMP_CONNECTED':
+        await this.onActivateChloeMode()
+        break
+      case 'LAMP_DISCONNECTED':
+      case 'SERVER_DISCONNECTED':
+        if (this.state.chloeMode) {
+          await this.onDeactivatedChloeMode()
+          await this.setState({ alert: newSocketState === 'LAMP_DISCONNECTED' ? 'lamp' : 'server' })
+        }
+        break
+      default:
     }
   }
 
@@ -103,6 +125,19 @@ class StoryContainer extends Component {
     }
   }
 
+  onActivateChloeMode() {
+    this.setState({
+      chloeMode: true,
+      isDeconnectButtonDisplayed: true,
+      deconnectLamp: false,
+    })
+  }
+
+  onGoHome = async () => {
+    await socketEmit('remove')
+    await Actions.themes()
+  }
+
   render() {
     const { current, pages, period } = this.props
     return (
@@ -113,8 +148,8 @@ class StoryContainer extends Component {
       >
         <View style={styles.button}>
           <Button
-            onPress={() => Actions.storyOverview({ type: 'back' })}
-            title="Retour"
+            onPress={() => this.onGoHome()}
+            title="Accueil"
             style={(this.state.pageMode === 'dark' || this.state.chloeMode) ? { color: '#FEFEFE' } : null}
           />
           {!this.state.isDeconnectButtonDisplayed &&
@@ -157,7 +192,7 @@ class StoryContainer extends Component {
             </View>
           ))}
         </Swiper>
-        {this.state.alert !== null &&
+        {(this.state.alert !== null) &&
           <Alert
             type={this.state.alert}
             onPress={() => this.onDismissAlert()}
