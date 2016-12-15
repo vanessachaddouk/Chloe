@@ -6,6 +6,7 @@ import { Actions } from 'react-native-router-flux'
 import { getPeriodColor } from '@helpers/periods'
 import { socket, socketState } from '@helpers/socket'
 import Swiper from 'react-native-swiper'
+import Alert from '@components/Alert'
 import Button from '@components/Button'
 import Page from '@components/Page'
 import ProjectorButton from '@components/ProjectorButton'
@@ -20,6 +21,7 @@ type Props = {
 }
 
 type State = {
+  alert: string | null,
   chloeMode: boolean,
   isLampConnected: boolean,
   isDeconnectButtonDisplayed: boolean,
@@ -30,6 +32,7 @@ type State = {
 class StoryContainer extends Component {
   props: Props
   state: State = {
+    alert: null,
     chloeMode: true,
     isLampConnected: false,
     isDeconnectButtonDisplayed: true,
@@ -39,6 +42,7 @@ class StoryContainer extends Component {
   }
 
   componentDidMount = async () => {
+    console.disableYellowBox = true
     this.props.bookmark(this.props.current)
     socket.on('connect', () => this.onSetSocketState('SERVER_CONNECTED'))
     socket.on('disconnect', () => this.onSetSocketState('SERVER_DISCONNECTED'))
@@ -58,6 +62,10 @@ class StoryContainer extends Component {
     console.warn('DECONNECTED TO LAMP')
   }
 
+  onDismissAlert() {
+    this.setState({ alert: null })
+  }
+
   onMomentumScrollEnd = (e, state) => {
     const current = {
       title: this.props.pages[state.index].title,
@@ -71,9 +79,15 @@ class StoryContainer extends Component {
     if (this.state.isLampConnected && this.state.isServerConnected && !this.state.deconnectLamp) {
       await this.setState({
         chloeMode: true,
-        isDeconnectButtonDisplayed: false,
+        isDeconnectButtonDisplayed: true,
         deconnectLamp: false,
       })
+    }
+    if (newSocketState === 'LAMP_DISCONNECTED') {
+      this.setState({ alert: 'lamp' })
+    }
+    if (newSocketState === 'SERVER_DISCONNECTED') {
+      this.setState({ alert: 'server' })
     }
   }
 
@@ -117,6 +131,7 @@ class StoryContainer extends Component {
           {pages.map((page, index) => (
             <View key={index}>
               <Page
+                alert={this.state.alert}
                 title={page.title}
                 text={page.text}
                 image={page.image}
@@ -129,6 +144,13 @@ class StoryContainer extends Component {
             </View>
           ))}
         </Swiper>
+        {this.state.alert !== null &&
+          <Alert
+            type={this.state.alert}
+            onPress={() => this.onDismissAlert()}
+            color={getPeriodColor(period)}
+          />
+        }
       </Image>
     )
   }

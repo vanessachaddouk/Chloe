@@ -34,6 +34,9 @@ const Icon = (props: Props): React$Element<any> | null => {
     case 'contemporaryTimes':
       icon = require('./LightBulb').default
       break
+    case 'lamp':
+      icon = require('./Lamp').default
+      break
     case 'locker':
       icon = require('./Locker').default
       break
@@ -49,9 +52,9 @@ const Icon = (props: Props): React$Element<any> | null => {
     case 'preHistory':
       icon = require('./PreHistory').default
       break
-    // case 'contemporaryTimes':
-    //   icon = require('./ContemporaryTimes').default
-    //   break
+    case 'server':
+      icon = require('./Server').default
+      break
     default:
   }
   return icon

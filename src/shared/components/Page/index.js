@@ -29,13 +29,13 @@ const Page = (props: Props): React$Element<any> => {
         />
       )
     : (
-      <ChloeMode
-        title={title}
-        text={text}
-        period={period}
-        content={content}
-        pageStatus={pageStatus}
-      />
+        <ChloeMode
+          title={title}
+          text={text}
+          period={period}
+          content={content}
+          pageStatus={pageStatus}
+        />
     )
 }
 

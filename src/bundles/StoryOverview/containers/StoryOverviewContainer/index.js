@@ -47,12 +47,12 @@ class StoryOverviewContainer extends Component {
               draggable={false}
               period={period}
               onPress={() => Actions.story({
-                pages,
-                period,
                 current: {
                   title: page.title,
                   pageId: page.id,
                 },
+                pages,
+                period,
               })}
               style={styles.mediaTile}
             />

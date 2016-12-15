@@ -14,7 +14,7 @@ type Props = {
 
 const Button = (props: Props): React$Element<any> => {
   const { color, onPress, style, title } = props
-  return (title === 'Retour' || title === 'Mode jour' || title === 'Mode nuit')
+  return (title === 'Retour' || title === 'Mode jour' || title === 'Mode nuit' || title === 'Continuer')
   ? (
       <TouchableWithoutFeedback onPress={onPress}>
         <View><Text style={[styles.text, style]}>{title}</Text></View>
