@@ -7,6 +7,7 @@ import {
   DEFAULT_TEXT_COLOR,
   DEFAULT_TEXT_COLOR_LIGHT,
   DEFAULT_TITLE_COLOR,
+  NEUTRAL_COLOR_20,
   NEUTRAL_COLOR_80,
   NEUTRAL_COLOR_70,
 } from '@theme/colors'
@@ -73,6 +74,13 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     width: rem(18.375),
     height: rem(8.25),
+    borderRadius: 6,
+    backgroundColor: 'transparent',
+  },
+  chloeZoneText: {
+    width: rem(18.375),
+    height: rem(8.25),
+    backgroundColor: NEUTRAL_COLOR_20,
   },
   contentContainer: {
     marginTop: rem(2.5),

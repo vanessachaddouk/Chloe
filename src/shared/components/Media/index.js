@@ -1,13 +1,14 @@
 /* @flow */
 
 import React, { Component } from 'react'
-import { Button, TouchableWithoutFeedback, View } from 'react-native'
+import { TouchableWithoutFeedback, View } from 'react-native'
 import * as Animatable from 'react-native-animatable'
 import { animations } from '@helpers/animations'
 import MediaContent from './MediaContent'
 import styles from './styles'
 
 type Props = {
+  active: boolean,
   image: string,
   bookmarked?: boolean,
   draggable?: boolean,
@@ -56,7 +57,7 @@ class Media extends Component {
   }
 
   render() {
-    const { bookmarked, draggable, image, onPress, tileNumber, tileText, tileTitle, style, period } = this.props
+    const { active, bookmarked, draggable, image, onPress, tileNumber, tileText, tileTitle, style, period } = this.props
     return draggable
     ? (
        <Animatable.View
@@ -67,6 +68,7 @@ class Media extends Component {
          style={[styles.container, { transform: [{ translateY: this.state.y }] }, style]}
        >
          <MediaContent
+           active={active}
            bookmarked={bookmarked}
            image={image}
            tileNumber={tileNumber}
@@ -80,17 +82,15 @@ class Media extends Component {
        <TouchableWithoutFeedback onPress={onPress}>
          <View style={[styles.container, style]}>
            <MediaContent
+             active={active}
              bookmarked={bookmarked}
              image={image}
              tileNumber={tileNumber}
              tileText={tileText}
              tileTitle={tileTitle}
              period={period}
+             style={style}
            />
-           {/* <Button
-             title="Press"
-             onPress={onPress}
-           /> */}
          </View>
        </TouchableWithoutFeedback>
     )
