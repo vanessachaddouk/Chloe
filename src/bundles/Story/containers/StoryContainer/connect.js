@@ -2,13 +2,15 @@
 
 import { compose } from 'recompose'
 import { connect } from 'react-redux'
-import { bookmark } from '@store/modules/bookmark'
+import observableBookmarkStore from '@store/mobx/bookmark'
+import observableProjectionStore from '@store/mobx/projection'
 
 const mapStateToProps = (state) => ({
-  savedBookmark: state.bookmark,
+  bookmarkStore: observableBookmarkStore,
+  projectionStore: observableProjectionStore,
 })
 
-const mapActionsToProps = { bookmark }
+const mapActionsToProps = { }
 
 export default (container): React$Element<any> => compose(
   connect(

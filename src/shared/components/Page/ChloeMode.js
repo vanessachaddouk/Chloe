@@ -4,6 +4,9 @@ import React, { Component } from 'react'
 import { Image, StatusBar, Text, TouchableWithoutFeedback, View } from 'react-native'
 import { getPeriodColor } from '@helpers/periods'
 import { socketEmit } from '@helpers/socket'
+import { observable } from 'mobx'
+import { observer } from 'mobx-react/native'
+import observableProjectionStore from '@store/mobx/projection'
 import Media from '@components/Media'
 import styles from './styles'
 
@@ -15,31 +18,25 @@ type Props = {
   pageStatus: Array<number>,
 }
 
-type State= {
-  currentlyProjected: string,
-}
-
+@observer
 class ChloeMode extends Component {
   props: Props
-  state: State = {
-    currentlyProjected: {},
-  }
+  @observable currentlyProjected: string = {}
 
-  componentWillReceiveProps() {
-    this.setState({ currentlyProjected: {} })
-  }
+  componentWillReceiveProps() { this.currentlyProjected = {} }
 
   onSendMedia(currentlyProjected: Object) {
-    if (currentlyProjected === this.state.currentlyProjected) {
+    if (currentlyProjected === this.currentlyProjected) {
       this.onRemoveMedia()
     } else {
       socketEmit(currentlyProjected.type, currentlyProjected.data)
-      this.setState({ currentlyProjected })
+      this.currentlyProjected = currentlyProjected
+      observableProjectionStore.setProjected(currentlyProjected)
     }
   }
 
   onRemoveMedia() {
-    this.setState({ currentlyProjected: {} })
+    this.currentlyProjected = {}
     socketEmit('remove')
   }
 
@@ -66,18 +63,18 @@ class ChloeMode extends Component {
             source={require('./assets/chloeZone.png')}
             style={styles.chloeZoneImage}
           >
-            {this.state.currentlyProjected.type !== 'word' &&
+            {observableProjectionStore.projectionStore.type !== 'word' &&
               <TouchableWithoutFeedback onPress={() => this.onRemoveMedia()}>
                 <Image
                   resizeMode="cover"
-                  source={{ uri: this.state.currentlyProjected.content }}
+                  source={{ uri: observableProjectionStore.projectionStore.content }}
                   style={styles.chloeZoneImage}
                 />
               </TouchableWithoutFeedback>
             }
-            {this.state.currentlyProjected.type === 'word' &&
+            {this.currentlyProjected.type === 'word' &&
               <Media
-                tileText={this.state.currentlyProjected.content}
+                tileText={observableProjectionStore.projectionStore.content}
                 period={period}
                 draggable={false}
                 onPress={() => this.onRemoveMedia()}
@@ -94,7 +91,7 @@ class ChloeMode extends Component {
                     <View style={{ marginRight: 25 }}>
                       {item.type === 'word' &&
                         <Media
-                          active={this.state.currentlyProjected.content === item.content}
+                          active={observableProjectionStore.projectionStore.content === item.content}
                           period={period}
                           tileText={item.content}
                           draggable={false}
@@ -103,7 +100,7 @@ class ChloeMode extends Component {
                       }
                       {item.type !== 'word' &&
                       <Media
-                        active={this.state.currentlyProjected.content === item.content}
+                        active={observableProjectionStore.projectionStore.content === item.content}
                         period={period}
                         image={item.content}
                         draggable={false}
@@ -122,7 +119,7 @@ class ChloeMode extends Component {
                     <View style={{ marginRight: 25 }}>
                       {item.type === 'word' &&
                         <Media
-                          active={this.state.currentlyProjected.content === item.content}
+                          active={observableProjectionStore.projectionStore.content === item.content}
                           period={period}
                           tileText={item.content}
                           draggable={false}
@@ -131,7 +128,7 @@ class ChloeMode extends Component {
                       }
                       {item.type !== 'word' &&
                       <Media
-                        active={this.state.currentlyProjected.content === item.content}
+                        active={observableProjectionStore.projectionStore.content === item.content}
                         period={period}
                         image={item.content}
                         draggable={false}

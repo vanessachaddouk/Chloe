@@ -1997,7 +1997,7 @@ hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
-hoist-non-react-statics@^1.0.0, hoist-non-react-statics@^1.0.3:
+hoist-non-react-statics@^1.0.0, hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
@@ -2555,6 +2555,16 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mobx-react@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-4.0.3.tgz#40eb31d25e0b8d63048eda2376cc56bfabd14f75"
+  dependencies:
+    hoist-non-react-statics "^1.2.0"
+
+mobx@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-2.7.0.tgz#cf3d82d18c0ca7f458d8f2a240817b3dc7e54a01"
+
 moment@2.x.x:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
@@ -2887,10 +2897,6 @@ react-clone-referenced-element@^1.0.1:
 react-deep-force-update@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-1.0.1.tgz#f911b5be1d2a6fe387507dd6e9a767aa2924b4c7"
-
-react-native-animatable@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.1.0.tgz#1ca3e8a00e441979d5711805651ff62a2d3b245a"
 
 react-native-experimental-navigation@0.26.x:
   version "0.26.10"
