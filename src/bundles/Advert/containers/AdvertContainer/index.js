@@ -31,7 +31,7 @@ const AdvertContainer = (props: Props) => {
           defaultColor={getPeriodColor(period)}
           size={200}
         />
-        <Text style={styles.text}>Précommandez votre lampe Chloé à partir du 22 Décembre pour vivre une expérience encore plsu immersive !</Text>
+        <Text style={styles.text}>Pré-commandez votre lampe Chloé à partir du 22 Décembre pour vivre une expérience encore plus immersive !</Text>
         <TouchableWithoutFeedback
           onPress={() => Actions.story({
             current,

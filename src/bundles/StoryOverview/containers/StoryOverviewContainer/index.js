@@ -4,6 +4,8 @@ import React, { Component } from 'react'
 import { Image, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import { socket, socketEmit } from '@helpers/socket'
+import { observable } from 'mobx'
+import { observer } from 'mobx-react/native'
 import Button from '@components/Button'
 import Media from '@components/Media'
 import Title from '@components/Title'
@@ -11,60 +13,39 @@ import styles from './styles'
 import connect from './connect'
 
 type Props = {
-  hideAdvert: Fonction,
-  lampStatus: string,
   title: string,
   period: string,
   pages: Array<Object>,
   savedBookmark: Object,
 }
 
-type State = {
-  lampStatus: 'CONNECTED' | 'DISCONNECTED',
-}
+type State = 'CONNECTED' | 'DISCONNECTED'
 
+@observer
 class StoryOverviewContainer extends Component {
   props: Props
 
-  state: State = {
-    lampStatus: 'DISCONNECTED',
-  }
+  @observable lampStatus: State = 'DISCONNECTED'
 
-  componentWillMount = async () => {
-    await socketEmit('connection')
-    await this.socketStatus()
-  }
-
-  componentWillReceiveProps() {
+  componentWillMount() {
+    socketEmit('connection')
     this.socketStatus()
   }
 
-  socketStatus = async () => {
+  socketStatus = () => {
     socket.on('lamp_connected', () => {
-      this.props.hideAdvert('CONNECTED')
+      this.lampStatus = 'CONNECTED'
     })
-    await socket.on('lamp_already_connected', async () => {
-      await this.props.hideAdvert('CONNECTED')
-      await this.setState({ lampStatus: 'CONNECTED' })
+    socket.on('lamp_already_connected', () => {
+      this.lampStatus = 'CONNECTED'
     })
     socket.on('lamp_disconnected', () => {
-      this.props.hideAdvert('DISCONNECTED')
-    })
-  }
-
-  onRedirectToHistory() {
-    Actions.story({
-      current: {
-        title: page.title,
-        pageId: page.id,
-      },
-      pages,
-      period,
+      this.lampStatus = 'DISCONNECTED'
     })
   }
 
   render() {
-    const { title, period, pages, savedBookmark } = this.props
+    const { title, period, pages } = this.props
     return (
       <Image
         resizeMode="cover"
@@ -84,13 +65,16 @@ class StoryOverviewContainer extends Component {
           {pages.map((page, index) => (
             <Media
               key={index}
-              bookmarked={(savedBookmark.title === page.title && savedBookmark.pageId === page.id)}
+              bookmarked={(
+                this.props.savedBookmark.bookmarkStore.title === page.title &&
+                this.props.savedBookmark.bookmarkStore.pageId === page.id
+              )}
               image={page.image}
               tileNumber={page.id}
               tileTitle={page.title}
               draggable={false}
               period={period}
-              onPress={(this.props.lampStatus === 'CONNECTED' || this.state.lampStatus === 'CONNECTED') ?
+              onPress={(this.lampStatus === 'CONNECTED') ?
                 () => Actions.story({
                     current: {
                       title: page.title,
